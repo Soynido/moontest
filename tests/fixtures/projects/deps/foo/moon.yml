@@ -1,0 +1,8 @@
+dependsOn:
+  - bar
+  - baz
+
+layer: application
+language: javascript
+
+tags: ['react']

@@ -1,0 +1,83 @@
+---
+version: 1.0.0
+updated: 2025-12-03T21:31:15.322Z
+confidence: 0.6
+workspace_mode: existing
+---
+
+# Plan — First Use Extended Baseline
+
+## Phase
+moon est un outil de gestion de monorepo écrit en Rust avec des packages npm associés. Le projet se concentre sur la stabilisation du core Rust (config, graph, diagnostics, code owners) tout en migrant progressivement la zone legacy vers proto/WASM. Les priorités actuelles incluent l'amélioration des diagnostics, la config partagée/code owners, l'optimisation 'affected projects' et la migration legacy. Les conventions strictes (tests verts obligatoires, formatage auto, semver strict, master compatible stable) et les zones critiques (config/graph, proto/WASM) nécessitent une gouvernance rigoureuse.
+
+## Source Evidence
+- Raw snapshot: /Users/valentingaludec/Downloads/moon-master/.reasoning_rl4/diagnostics/first-use-extended/raw-snapshot-1764796362058.json
+- RL4 project JSON: /Users/valentingaludec/Downloads/moon-master/.reasoning_rl4/diagnostics/first-use-extended/analysis-latest.json
+
+## Modules & Domains
+- moon_config — Gestion de la configuration workspace/projet
+- moon_task — Système de tâches et exécution
+- moon_action — Pipeline d'actions et orchestration
+- moon_cache — Système de cache et hashing
+- moon_graph — Graphe de dépendances projet/task
+- cli — CLI binaire moon
+- npm_packages — Packages npm (@moonrepo/*)
+- legacy_core — Core legacy en migration
+
+## Domain Landscape
+- core_rust
+- cli_binaries
+- npm_packages
+- legacy_migration
+- proto_wasm_toolchain
+- documentation
+- testing_infrastructure
+
+## Conventions & Constraints
+- Just pour build/test/lint Rust (just build, just test, just lint, just format)
+- yarn moon pour packages Node (yarn moon run :test, :lint, :typecheck)
+- Tests verts obligatoires avant PR
+- Formatage automatique Rust (rustfmt) et JS/TS (Prettier)
+- Semver strict avec yarn release workflow
+- master toujours compatible avec dernière release stable
+- Pas de breaking changes sur master sans version bump
+- Code coverage avec llvm-cov (just cov, just gen-html)
+- Branch master pour PRs (pas de feature branches long-lived)
+- Rust >= 1.61, Node >= v14.15 (engines: >=22.14.0)
+- Proto pour gestion versions Node/Yarn
+
+## Execution Constraints
+- Ne jamais modifier moon_config ou moon_graph sans validation explicite
+- Ne jamais toucher composants proto/WASM sans analyse d'impact
+- Pas de breaking changes sur master (master == dernière stable + features compatibles)
+- Tests obligatoires verts avant tout merge
+- Compatibilité multi-runtime Node/TS/Rust/Go/Python obligatoire
+- Préserver déterminisme hashing et build reproducibility
+- Respecter versions min Rust >= 1.61, Node >= 22.14.0
+- Migration legacy progressive uniquement (pas de big bang)
+- Formatage automatique obligatoire (rustfmt + Prettier)
+- Semver strict avec yarn version workflow
+
+## Risks & Watchpoints
+- Zone legacy (135 fichiers) en migration progressive - risque de régression compatibilité
+- Crates moon_config et moon_graph sont critiques - modifications nécessitent validation explicite
+- Proto/WASM en transition - double maintenance legacy + nouveau système
+- 806 fichiers source Rust - surface de code importante
+- TODO hotspots détectés dans website/docs (setup-workspace.mdx:11, proto/commands/versions.mdx:11, concepts/workspace.mdx:6)
+- Snapshot git unavailable - historique et diff non exploitables pour reconstruction
+- Multi-runtime (Node, TS, Rust, Go, Python) - compatibilité versions critique
+- Remote caching et build reproducibility - déterminisme à préserver absolument
+
+## Current Priorities (Cycle #1)
+- P0: Stabilisation toolchain/graph/caching (criticité max - infrastructure core)
+- P1: Amélioration diagnostics et introspection
+- P1: Config partagée et code owners
+- P1: Optimisation 'affected projects'
+- P2: Migration legacy vers proto/WASM (progressive)
+- P2: Résolution TODO hotspots documentation
+
+## Next Human Actions
+1. Prioriser les tâches P1 selon les dépendances techniques
+2. Valider la stratégie de migration legacy (timeline, risques)
+3. Définir les ADRs pour zones critiques (config, graph, proto/WASM)
+4. Établir les métriques de réussite pour la stabilisation P0

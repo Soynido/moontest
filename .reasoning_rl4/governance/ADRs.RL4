@@ -1,0 +1,81 @@
+# ADRs — Architecture Decision Records
+
+## Format
+
+Each ADR follows this structure:
+
+```markdown
+## ADR-XXX: [Title]
+
+**Status**: proposed | accepted | rejected | deprecated | superseded
+**Date**: YYYY-MM-DD
+**Author**: [Author name]
+
+### Context
+[Describe the context and problem]
+
+### Decision
+[Describe the decision made]
+
+### Consequences
+**Positive:** [List positive consequences]
+**Negative:** [List negative consequences]
+```
+
+---
+
+## ADR-001: Zones critiques protégées (config, graph, proto/WASM)
+
+**Status**: accepted
+**Date**: 2025-12-03
+**Author**: RL4 Agent
+
+### Context
+Les crates `moon_config` et `moon_graph` sont au cœur de l'architecture moon. Toute modification non validée peut casser la compatibilité, le déterminisme du build, ou les dépendances transverses. De même, proto/WASM est en transition active.
+
+### Decision
+Interdire toute modification de `moon_config`, `moon_graph`, et composants proto/WASM sans validation explicite + analyse d'impact documentée. Requiert ADR dédié pour chaque changement structurel.
+
+### Consequences
+**Positive:** Préserve la stabilité du core, évite les régressions sur le graphe de dépendances, garantit le déterminisme.
+**Negative:** Ralentit les modifications urgentes, nécessite une gouvernance plus lourde.
+
+---
+
+## ADR-002: Migration legacy progressive (pas de big bang)
+
+**Status**: accepted
+**Date**: 2025-12-03
+**Author**: RL4 Agent
+
+### Context
+La zone legacy (135 fichiers) contient du code critique encore en production. Une migration brutale présente un risque de régression majeur et casse la compatibilité descendante.
+
+### Decision
+Migration incrémentale par modules isolables. Maintenir la compatibilité legacy pendant au moins 2 releases majeures. Stratégie de rollback documentée pour chaque module migré.
+
+### Consequences
+**Positive:** Réduit le risque de régression, permet des tests progressifs, préserve la compatibilité.
+**Negative:** Double maintenance temporaire (legacy + nouveau système), timeline de migration allongée.
+
+---
+
+## ADR-003: Tests verts obligatoires avant merge
+
+**Status**: accepted
+**Date**: 2025-12-03
+**Author**: RL4 Agent
+
+### Context
+moon est utilisé en production par des projets critiques. Les régressions peuvent bloquer des équipes entières. La surface de code Rust est importante (806 fichiers source).
+
+### Decision
+Aucun merge sur master sans tests verts. CI/CD bloquant. Code coverage minimum requis pour les zones critiques (config, graph, cache). Formatage auto obligatoire (rustfmt + Prettier).
+
+### Consequences
+**Positive:** Garantit la stabilité de master, réduit les régressions, maintient la qualité du code.
+**Negative:** Peut ralentir les hotfixes urgents, nécessite une infrastructure CI robuste.
+
+---
+
+_This file is managed by RL4. Add ADRs here as they are proposed by the agent._

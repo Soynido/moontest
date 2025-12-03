@@ -1,0 +1,51 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2025-12-03T21:56:23.761Z",
+  "total_cycles": 3,
+  "date_range": {
+    "first": "",
+    "last": "2025-12-03T21:56:23.756Z"
+  },
+  "by_day": {
+    "2025-12-03": [
+      1,
+      2
+    ]
+  },
+  "by_file": {},
+  "by_hour": {
+    "2025-12-03T22": [
+      1,
+      2
+    ]
+  },
+  "entries": [
+    {
+      "cycleId": 1,
+      "timestamp": "2025-12-03T21:20:22.556Z",
+      "day": "2025-12-03",
+      "hour": 22,
+      "patterns_count": 0,
+      "forecasts_count": 0,
+      "files": []
+    },
+    {
+      "cycleId": 2,
+      "timestamp": "2025-12-03T21:32:32.582Z",
+      "day": "2025-12-03",
+      "hour": 22,
+      "patterns_count": 0,
+      "forecasts_count": 0,
+      "files": []
+    },
+    {
+      "cycleId": 1,
+      "timestamp": "2025-12-03T21:56:23.756Z",
+      "day": "2025-12-03",
+      "hour": 22,
+      "patterns_count": 0,
+      "forecasts_count": 0,
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{"timestamp":"2025-12-03T21:12:18.859Z","level":"SYSTEM","message":"=== RL4 KERNEL — Cognitive Console ==="}
+{"timestamp":"2025-12-03T21:12:18.859Z","level":"SYSTEM","message":"Workspace: /Users/valentingaludec/Downloads/moon-master"}
+{"timestamp":"2025-12-03T21:12:18.860Z","level":"SYSTEM","message":"====================================="}
+{"timestamp":"2025-12-03T21:12:18.860Z","level":"SYSTEM","message":"📊 Memory Monitor initialized (baseline: 136.24 MB)"}
+{"timestamp":"2025-12-03T21:12:18.860Z","level":"SYSTEM","message":"🐕 Memory Watchdog started (threshold: 500 MB)"}
+{"timestamp":"2025-12-03T21:12:18.860Z","level":"SYSTEM","message":"🐕 Memory Watchdog started (threshold: 500 MB)"}
+{"timestamp":"2025-12-03T21:12:18.860Z","level":"SYSTEM","message":"🎧 ShellMessageCapture initialisé"}
+{"timestamp":"2025-12-03T21:12:18.860Z","level":"SYSTEM","message":"🗂️ ConversationLogger prêt"}
+{"timestamp":"2025-12-03T21:12:18.860Z","level":"SYSTEM","message":"🔧 Initializing RL4 Kernel..."}
+{"timestamp":"2025-12-03T21:12:18.895Z","level":"SYSTEM","message":"Diagnostics artifacts initialisés: diagnostics/metrics/cycle-metrics.jsonl, diagnostics/metrics/llm-metrics.jsonl, traces/last-cycle.json"}
+{"timestamp":"2025-12-03T21:12:18.904Z","level":"SYSTEM","message":"✅ RL4 Kernel components created"}
+{"timestamp":"2025-12-03T21:12:18.905Z","level":"SYSTEM","message":"[BOOTSTRAP] Created directory: /Users/valentingaludec/Downloads/moon-master/.reasoning_rl4/governance"}
+{"timestamp":"2025-12-03T21:12:18.905Z","level":"SYSTEM","message":"[BOOTSTRAP] Created directory: /Users/valentingaludec/Downloads/moon-master/.reasoning_rl4/cache"}
+{"timestamp":"2025-12-03T21:12:18.905Z","level":"SYSTEM","message":"[BOOTSTRAP] Created directory: /Users/valentingaludec/Downloads/moon-master/.reasoning_rl4/artifacts"}
+{"timestamp":"2025-12-03T21:12:18.905Z","level":"SYSTEM","message":"[BOOTSTRAP] Created directory: /Users/valentingaludec/Downloads/moon-master/.reasoning_rl4/config"}
+{"timestamp":"2025-12-03T21:12:18.905Z","level":"SYSTEM","message":"[BOOTSTRAP] Created minimal ledger.jsonl"}
+{"timestamp":"2025-12-03T21:12:18.905Z","level":"SYSTEM","message":"[BOOTSTRAP] Workspace /Users/valentingaludec/Downloads/moon-master is ready"}
+{"timestamp":"2025-12-03T21:12:18.906Z","level":"SYSTEM","message":"📦 Created dev-actions-rble.bin for RBLE history"}
+{"timestamp":"2025-12-03T21:12:18.947Z","level":"SYSTEM","message":"🔍 Workspace detected: mode=new, firstUse=extended, isLarge=true, requiresGitHub=false"}
+{"timestamp":"2025-12-03T21:12:18.947Z","level":"SYSTEM","message":"   → Large project detected: 778 source files"}
+{"timestamp":"2025-12-03T21:12:18.947Z","level":"SYSTEM","message":"[BOOTSTRAP] Creating initial RL4 files (mode: new)..."}
+{"timestamp":"2025-12-03T21:12:18.948Z","level":"SYSTEM","message":"[BOOTSTRAP] ✅ Initial RL4 files created (placeholder mode)"}
+{"timestamp":"2025-12-03T21:12:18.948Z","level":"SYSTEM","message":"🛠️ Upgrade applied (dev/dev-actions.jsonl)"}
+{"timestamp":"2025-12-03T21:12:18.948Z","level":"WARNING","message":"No kernel artifacts found, starting with default baseline (0.73)"}
+{"timestamp":"2025-12-03T21:12:18.949Z","level":"SYSTEM","message":"❤️ Health Monitor started"}
+{"timestamp":"2025-12-03T21:12:18.949Z","level":"SYSTEM","message":"🧠 Starting CognitiveScheduler (delayed start in 3s)..."}
+{"timestamp":"2025-12-03T21:12:18.949Z","level":"SYSTEM","message":"✅ Status Bar item created"}
+{"timestamp":"2025-12-03T21:12:18.949Z","level":"SYSTEM","message":"🖥️ Creating RL4 Dashboard WebView..."}
+{"timestamp":"2025-12-03T21:12:18.951Z","level":"SYSTEM","message":"✅ WebView HTML loaded"}
+{"timestamp":"2025-12-03T21:12:18.952Z","level":"SYSTEM","message":"✅ RL4 Rule already up-to-date in .cursor/rules"}
+{"timestamp":"2025-12-03T21:12:18.952Z","level":"SYSTEM","message":"✅ FileWatchers registered for Plan/Tasks/Context/ADRs.RL4"}
+{"timestamp":"2025-12-03T21:12:18.953Z","level":"SYSTEM","message":"✅ RL4 Kernel activated"}
+{"timestamp":"2025-12-03T21:12:18.953Z","level":"SYSTEM","message":"🎯 8 commands registered (4 kernel + 3 ADR validation + 1 webview)"}
+{"timestamp":"2025-12-03T21:12:18.953Z","level":"SYSTEM","message":"🖥️ Dashboard auto-opened in column 2"}
+{"timestamp":"2025-12-03T21:12:19.053Z","level":"SYSTEM","message":"📜 ADRs.RL4 created, processing..."}
+{"timestamp":"2025-12-03T21:12:19.458Z","level":"SYSTEM","message":"✅ Initial Context.RL4 sent to WebView"}
+{"timestamp":"2025-12-03T21:12:19.458Z","level":"SYSTEM","message":"⚠️ proposals.json not found or empty (will show empty state)"}
+{"timestamp":"2025-12-03T21:12:19.459Z","level":"SYSTEM","message":"✅ Initial Tasks.RL4 sent to WebView"}
+{"timestamp":"2025-12-03T21:12:19.459Z","level":"SYSTEM","message":"✅ Initial ADRs.RL4 sent to WebView"}
+{"timestamp":"2025-12-03T21:12:19.470Z","level":"SYSTEM","message":"[Git] Repository not detected — disabling git-based metrics"}
+{"timestamp":"2025-12-03T21:12:20.027Z","level":"SYSTEM","message":"[Insights] Delivery skipped (manual_request) due to throttle (514ms < 5000ms)"}
+{"timestamp":"2025-12-03T21:12:21.951Z","level":"SYSTEM","message":"⏳ Waiting 2s for Extension Host to stabilize..."}
+{"timestamp":"2025-12-03T21:12:23.951Z","level":"SYSTEM","message":"✅ Extension Host ready"}
+{"timestamp":"2025-12-03T21:12:23.952Z","level":"SYSTEM","message":"🗂️  Loading kernel artifacts..."}
+{"timestamp":"2025-12-03T21:12:23.952Z","level":"SYSTEM","message":"✅ Kernel artifacts loaded"}
+{"timestamp":"2025-12-03T21:12:23.952Z","level":"SYSTEM","message":"📇 Initializing cache index..."}
+{"timestamp":"2025-12-03T21:12:23.953Z","level":"SYSTEM","message":"📇 No index found, rebuilding..."}
+{"timestamp":"2025-12-03T21:12:23.954Z","level":"SYSTEM","message":"✅ Cache index rebuilt successfully"}
+{"timestamp":"2025-12-03T21:12:23.954Z","level":"SYSTEM","message":"🔧 Running data normalization..."}
+{"timestamp":"2025-12-03T21:12:23.955Z","level":"SYSTEM","message":"✅ Data already normalized"}
+{"timestamp":"2025-12-03T21:12:23.955Z","level":"SYSTEM","message":"👁️  Starting IDE activity listener..."}
+{"timestamp":"2025-12-03T21:12:23.955Z","level":"SYSTEM","message":"✅ IDE activity listener started"}
+{"timestamp":"2025-12-03T21:12:23.955Z","level":"SYSTEM","message":"🔨 Starting build metrics listener..."}
+{"timestamp":"2025-12-03T21:12:23.956Z","level":"SYSTEM","message":"✅ Build metrics listener started"}
+{"timestamp":"2025-12-03T21:12:23.956Z","level":"SYSTEM","message":"🧪 Registering cycle timer (7200000ms)..."}
+{"timestamp":"2025-12-03T21:12:23.956Z","level":"SYSTEM","message":"✅ Cycle timer registered successfully"}
+{"timestamp":"2025-12-03T21:12:23.956Z","level":"SYSTEM","message":"🧪 Registering watchdog timer (7200000ms)..."}
+{"timestamp":"2025-12-03T21:12:23.956Z","level":"SYSTEM","message":"✅ Watchdog timer registered successfully"}
+{"timestamp":"2025-12-03T21:12:23.956Z","level":"SYSTEM","message":"🛡️ Watchdog active (checking every 7200000ms)"}
+{"timestamp":"2025-12-03T21:12:23.956Z","level":"SYSTEM","message":"📊 Registering hourly summary timer (3600000ms)..."}
+{"timestamp":"2025-12-03T21:12:23.957Z","level":"SYSTEM","message":"✅ Hourly summary timer registered successfully"}
+{"timestamp":"2025-12-03T21:12:23.957Z","level":"SYSTEM","message":"✅ CognitiveScheduler fully initialized and ready"}
+{"timestamp":"2025-12-03T21:12:23.958Z","level":"SYSTEM","message":"✅ Kernel ready"}
+{"timestamp":"2025-12-03T21:12:23.960Z","level":"SYSTEM","message":"✅ TaskVerificationEngine initialized"}
+{"timestamp":"2025-12-03T21:12:24.024Z","level":"SYSTEM","message":"📊 Kernel status requested (cycle: 0, safeMode: false)"}
+{"timestamp":"2025-12-03T21:13:18.860Z","level":"SYSTEM","message":"Memory check: 151.03 MB (Δ+14.78 MB)"}
+{"timestamp":"2025-12-03T21:14:18.862Z","level":"SYSTEM","message":"Memory check: 150.73 MB (Δ+14.48 MB)"}
+{"timestamp":"2025-12-03T21:15:18.865Z","level":"SYSTEM","message":"Memory check: 140.42 MB (Δ+4.17 MB)"}
+{"timestamp":"2025-12-03T21:16:18.867Z","level":"SYSTEM","message":"Memory check: 142 MB (Δ+5.75 MB)"}
+{"timestamp":"2025-12-03T21:17:18.861Z","level":"SYSTEM","message":"Memory: 140.41 MB (Δ+4.17 MB, avg: 140.41 MB, peak: 140.41 MB)"}
+{"timestamp":"2025-12-03T21:17:18.866Z","level":"SYSTEM","message":"Memory check: 140.45 MB (Δ+4.2 MB)"}
+{"timestamp":"2025-12-03T21:17:29.207Z","level":"WARNING","message":"[FirstUseExtended] Baseline finalization failed: Confidence token invalid."}
+{"timestamp":"2025-12-03T21:17:34.465Z","level":"WARNING","message":"[FirstUseExtended] Baseline finalization failed: Confidence token invalid."}
+{"timestamp":"2025-12-03T21:18:18.869Z","level":"SYSTEM","message":"Memory check: 138.59 MB (Δ+2.34 MB)"}
+{"timestamp":"2025-12-03T21:19:18.871Z","level":"SYSTEM","message":"Memory check: 145.59 MB (Δ+9.34 MB)"}
+{"timestamp":"2025-12-03T21:20:18.872Z","level":"SYSTEM","message":"Memory check: 138.75 MB (Δ+2.5 MB)"}
+{"timestamp":"2025-12-03T21:20:22.045Z","level":"SYSTEM","message":"📋 Plan.RL4 changed, recalculating metrics..."}
+{"timestamp":"2025-12-03T21:20:22.046Z","level":"SYSTEM","message":"🔍 Context.RL4 changed, refreshing..."}
+{"timestamp":"2025-12-03T21:20:22.046Z","level":"SYSTEM","message":"✅ Tasks.RL4 changed, updating state..."}
+{"timestamp":"2025-12-03T21:20:22.047Z","level":"SYSTEM","message":"✅ Context.RL4 sent to WebView for KPI update"}
+{"timestamp":"2025-12-03T21:20:22.534Z","level":"SYSTEM","message":"📥 Plan.RL4 modified externally, triggering cycle..."}
+{"timestamp":"2025-12-03T21:20:22.546Z","level":"SYSTEM","message":"🔧 Restored Context.RL4 bootstrap lock (first_use_lock + ground_truth_established)"}
+{"timestamp":"2025-12-03T21:20:22.546Z","level":"SYSTEM","message":"🔥 [DEBUG] Starting cycle seq=6..."}
+{"timestamp":"2025-12-03T21:20:22.547Z","level":"CYCLE","cycle_id":1,"message":"Cycle started (silent)","metrics":{"phase":"cognitive-cycle"}}
+{"timestamp":"2025-12-03T21:20:22.547Z","level":"SYSTEM","message":"📥 Reloading Plan/Tasks/Context.RL4..."}
+{"timestamp":"2025-12-03T21:20:22.547Z","level":"SYSTEM","message":"✅ Reloaded: Plan=moon est un outil de gestion de monorepo écrit en Rust avec des packages npm associés. Le projet se concentre sur la stabilisation du core Rust (config, graph, diagnostics, code owners) tout en migrant progressivement la zone legacy vers proto/WASM. Les priorités actuelles incluent l'amélioration des diagnostics, la config partagée/code owners, l'optimisation 'affected projects' et la migration legacy. Les conventions strictes (tests verts obligatoires, formatage auto, semver strict, master compatible stable) et les zones critiques (config/graph, proto/WASM) nécessitent une gouvernance rigoureuse., Tasks=0 active, Context=N/A confidence"}
+{"timestamp":"2025-12-03T21:20:22.549Z","level":"SYSTEM","message":"🔥 [DEBUG] After cycleStart(), before calculating input hash..."}
+{"timestamp":"2025-12-03T21:20:22.549Z","level":"SYSTEM","message":"🔥 [DEBUG] Calling calculateInputHash()..."}
+{"timestamp":"2025-12-03T21:20:22.550Z","level":"SYSTEM","message":"🔥 [DEBUG] calculateInputHash() returned: c46361e7421fcb64"}
+{"timestamp":"2025-12-03T21:20:22.554Z","level":"WARNING","message":"[UnifiedPromptBuilder] Codec fallback triggered: timeline_insufficient: <3 ledger events"}
+{"timestamp":"2025-12-03T21:20:22.556Z","level":"SYSTEM","message":"📥 Context.RL4 modified externally, triggering cycle..."}
+{"timestamp":"2025-12-03T21:20:22.556Z","level":"SYSTEM","message":"🔥 [runCycle] QUEUED seq=7 — isRunning=true"}
+{"timestamp":"2025-12-03T21:20:22.557Z","level":"SYSTEM","message":"✅ Cycle completed after Context.RL4 modification"}
+{"timestamp":"2025-12-03T21:20:22.557Z","level":"SYSTEM","message":"✅ TaskVerificationEngine reloaded after Tasks.RL4 modification"}
+{"timestamp":"2025-12-03T21:20:22.557Z","level":"SYSTEM","message":"📥 Tasks.RL4 modified externally, triggering cycle..."}
+{"timestamp":"2025-12-03T21:20:22.557Z","level":"SYSTEM","message":"🔥 [runCycle] QUEUED seq=8 — isRunning=true"}
+{"timestamp":"2025-12-03T21:20:22.558Z","level":"SYSTEM","message":"✅ Cycle completed after Tasks.RL4 modification"}
+{"timestamp":"2025-12-03T21:20:22.566Z","level":"CYCLE","cycle_id":1,"phase":"complete","message":"Cycle #1 completed (silent)","metrics":{"patterns":0,"correlations":0,"forecasts":0,"adrs":0,"duration_ms":19,"health":{"drift":0.2554877486597475,"coherence":0.7044833905775774,"status":"stable"}}}
+{"timestamp":"2025-12-03T21:20:22.566Z","level":"SYSTEM","message":"✅ Kernel KPIs calculated (Cycle 1) - event emitted for LLM integration"}
+{"timestamp":"2025-12-03T21:20:22.569Z","level":"SYSTEM","message":"⏳ Cycle cooldown active (29987ms remaining) - skipping"}
+{"timestamp":"2025-12-03T21:20:22.570Z","level":"SYSTEM","message":"⏳ Cycle cooldown active (29986ms remaining) - skipping"}
+{"timestamp":"2025-12-03T21:20:22.570Z","level":"SYSTEM","message":"✅ Cycle completed after Plan.RL4 modification"}
+{"timestamp":"2025-12-03T21:20:22.571Z","level":"SYSTEM","message":"System Metrics","metrics":{"heap_used_mb":137.63,"event_loop_delay_ms":1,"queue_depth":0}}
+{"timestamp":"2025-12-03T21:20:23.147Z","level":"SYSTEM","message":"📥 Context.RL4 modified externally, triggering cycle..."}
+{"timestamp":"2025-12-03T21:20:23.147Z","level":"SYSTEM","message":"⏳ Cycle cooldown active (29409ms remaining) - skipping"}
+{"timestamp":"2025-12-03T21:20:23.147Z","level":"SYSTEM","message":"✅ Cycle completed after Context.RL4 modification"}
+{"timestamp":"2025-12-03T21:21:18.872Z","level":"SYSTEM","message":"Memory check: 137.3 MB (Δ+1.05 MB)"}
+{"timestamp":"2025-12-03T21:22:18.869Z","level":"SYSTEM","message":"Memory: 139.66 MB (Δ+3.42 MB, avg: 140.42 MB, peak: 140.42 MB)"}
+{"timestamp":"2025-12-03T21:22:18.872Z","level":"SYSTEM","message":"Memory check: 139.67 MB (Δ+3.42 MB)"}
+{"timestamp":"2025-12-03T21:23:18.874Z","level":"SYSTEM","message":"Memory check: 140.07 MB (Δ+3.82 MB)"}
+{"timestamp":"2025-12-03T21:24:18.875Z","level":"SYSTEM","message":"Memory check: 140.81 MB (Δ+4.56 MB)"}
+{"timestamp":"2025-12-03T21:25:18.877Z","level":"SYSTEM","message":"Memory check: 140.39 MB (Δ+4.14 MB)"}
+{"timestamp":"2025-12-03T21:26:18.882Z","level":"SYSTEM","message":"Memory check: 141.09 MB (Δ+4.84 MB)"}
+{"timestamp":"2025-12-03T21:27:18.876Z","level":"SYSTEM","message":"Memory: 144.12 MB (Δ+7.88 MB, avg: 140.04 MB, peak: 140.42 MB)"}
+{"timestamp":"2025-12-03T21:27:18.881Z","level":"SYSTEM","message":"Memory check: 144.14 MB (Δ+7.89 MB)"}
+{"timestamp":"2025-12-03T21:28:18.885Z","level":"SYSTEM","message":"Memory check: 134.03 MB (Δ-2.22 MB)"}
+{"timestamp":"2025-12-03T21:29:18.885Z","level":"SYSTEM","message":"Memory check: 136.66 MB (Δ+0.41 MB)"}
+{"timestamp":"2025-12-03T21:29:34.254Z","level":"SYSTEM","message":"📊 Kernel status requested (cycle: 1, safeMode: false)"}
+{"timestamp":"2025-12-03T21:29:45.245Z","level":"SYSTEM","message":"💡 Generating task suggestions..."}
+{"timestamp":"2025-12-03T21:29:45.248Z","level":"SYSTEM","message":"✅ Generated 0 suggestions for 0 tasks"}
+{"timestamp":"2025-12-03T21:30:18.886Z","level":"SYSTEM","message":"Memory check: 144.83 MB (Δ+8.58 MB)"}
+{"timestamp":"2025-12-03T21:30:48.802Z","level":"SYSTEM","message":"💡 Generating task suggestions..."}
+{"timestamp":"2025-12-03T21:30:48.805Z","level":"SYSTEM","message":"✅ Generated 0 suggestions for 0 tasks"}
+{"timestamp":"2025-12-03T21:30:56.664Z","level":"SYSTEM","message":"💡 Generating task suggestions..."}
+{"timestamp":"2025-12-03T21:30:56.665Z","level":"SYSTEM","message":"✅ Generated 0 suggestions for 0 tasks"}
+{"timestamp":"2025-12-03T21:31:01.424Z","level":"SYSTEM","message":"🛑 RL4 Kernel deactivating..."}
+{"timestamp":"2025-12-03T21:31:01.425Z","level":"SYSTEM","message":"🎧 ShellMessageCapture stoppé"}
+{"timestamp":"2025-12-03T21:31:01.425Z","level":"SYSTEM","message":"🧹 Disposing event listeners..."}
+{"timestamp":"2025-12-03T21:31:01.425Z","level":"SYSTEM","message":"✅ IDEActivityListener disposed"}
+{"timestamp":"2025-12-03T21:31:01.426Z","level":"SYSTEM","message":"✅ BuildMetricsListener disposed"}
+{"timestamp":"2025-12-03T21:31:01.426Z","level":"SYSTEM","message":"✅ Event listeners disposed"}
+{"timestamp":"2025-12-03T21:31:01.426Z","level":"SYSTEM","message":"✅ Status Bar disposed"}
+{"timestamp":"2025-12-03T21:31:01.426Z","level":"SYSTEM","message":"🖥️ WebView disposed"}
+{"timestamp":"2025-12-03T21:31:01.426Z","level":"SYSTEM","message":"✅ WebView disposed"}
+{"timestamp":"2025-12-03T21:31:01.426Z","level":"SYSTEM","message":"✅ Timers cleared"}
+{"timestamp":"2025-12-03T21:31:01.427Z","level":"SYSTEM","message":"📊 Memory Monitor disposed"}
+{"timestamp":"2025-12-03T21:31:01.427Z","level":"SYSTEM","message":"🐕 Memory Watchdog stopped"}
+{"timestamp":"2025-12-03T21:31:01.427Z","level":"SYSTEM","message":"🐕 Memory Watchdog disposed"}
+{"timestamp":"2025-12-03T21:31:01.439Z","level":"SYSTEM","message":"✅ Kernel shutdown complete"}
+{"timestamp":"2025-12-03T21:31:01.439Z","level":"SYSTEM","message":"🧠 RL4 Kernel deactivated cleanly"}
+{"timestamp":"2025-12-03T21:31:08.404Z","level":"SYSTEM","message":"=== RL4 KERNEL — Cognitive Console ==="}
+{"timestamp":"2025-12-03T21:31:08.405Z","level":"SYSTEM","message":"Workspace: /Users/valentingaludec/Downloads/moon-master"}
+{"timestamp":"2025-12-03T21:31:08.405Z","level":"SYSTEM","message":"====================================="}
+{"timestamp":"2025-12-03T21:31:08.405Z","level":"SYSTEM","message":"📊 Memory Monitor initialized (baseline: 145.21 MB)"}
+{"timestamp":"2025-12-03T21:31:08.405Z","level":"SYSTEM","message":"🐕 Memory Watchdog started (threshold: 500 MB)"}
+{"timestamp":"2025-12-03T21:31:08.405Z","level":"SYSTEM","message":"🐕 Memory Watchdog started (threshold: 500 MB)"}
+{"timestamp":"2025-12-03T21:31:08.405Z","level":"SYSTEM","message":"🎧 ShellMessageCapture initialisé"}
+{"timestamp":"2025-12-03T21:31:08.405Z","level":"SYSTEM","message":"🗂️ ConversationLogger prêt"}
+{"timestamp":"2025-12-03T21:31:08.405Z","level":"SYSTEM","message":"🔧 Initializing RL4 Kernel..."}
+{"timestamp":"2025-12-03T21:31:08.407Z","level":"SYSTEM","message":"✅ RL4 Kernel components created"}
+{"timestamp":"2025-12-03T21:31:08.407Z","level":"SYSTEM","message":"[BOOTSTRAP] Workspace /Users/valentingaludec/Downloads/moon-master is ready"}
+{"timestamp":"2025-12-03T21:31:08.455Z","level":"SYSTEM","message":"🔍 Workspace detected: mode=new, firstUse=extended, isLarge=true, requiresGitHub=false"}
+{"timestamp":"2025-12-03T21:31:08.455Z","level":"SYSTEM","message":"   → Large project detected: 779 source files"}
+{"timestamp":"2025-12-03T21:31:08.455Z","level":"SYSTEM","message":"[BOOTSTRAP] RL4 files already exist, skipping initial generation"}
+{"timestamp":"2025-12-03T21:31:08.457Z","level":"WARNING","message":"No kernel artifacts found, starting with default baseline (0.73)"}
+{"timestamp":"2025-12-03T21:31:08.457Z","level":"SYSTEM","message":"❤️ Health Monitor started"}
+{"timestamp":"2025-12-03T21:31:08.458Z","level":"SYSTEM","message":"🧠 Starting CognitiveScheduler (delayed start in 3s)..."}
+{"timestamp":"2025-12-03T21:31:08.458Z","level":"SYSTEM","message":"✅ Status Bar item created"}
+{"timestamp":"2025-12-03T21:31:08.458Z","level":"SYSTEM","message":"🖥️ Creating RL4 Dashboard WebView..."}
+{"timestamp":"2025-12-03T21:31:08.459Z","level":"SYSTEM","message":"✅ WebView HTML loaded"}
+{"timestamp":"2025-12-03T21:31:08.461Z","level":"SYSTEM","message":"✅ RL4 Rule already up-to-date in .cursor/rules"}
+{"timestamp":"2025-12-03T21:31:08.461Z","level":"SYSTEM","message":"✅ FileWatchers registered for Plan/Tasks/Context/ADRs.RL4"}
+{"timestamp":"2025-12-03T21:31:08.461Z","level":"SYSTEM","message":"✅ RL4 Kernel activated"}
+{"timestamp":"2025-12-03T21:31:08.462Z","level":"SYSTEM","message":"🎯 8 commands registered (4 kernel + 3 ADR validation + 1 webview)"}
+{"timestamp":"2025-12-03T21:31:08.462Z","level":"SYSTEM","message":"🖥️ Dashboard auto-opened in column 2"}
+{"timestamp":"2025-12-03T21:31:08.686Z","level":"SYSTEM","message":"[Git] Repository not detected — disabling git-based metrics"}
+{"timestamp":"2025-12-03T21:31:08.963Z","level":"SYSTEM","message":"✅ Initial Context.RL4 sent to WebView"}
+{"timestamp":"2025-12-03T21:31:08.964Z","level":"SYSTEM","message":"⚠️ proposals.json not found or empty (will show empty state)"}
+{"timestamp":"2025-12-03T21:31:08.965Z","level":"SYSTEM","message":"✅ Initial Tasks.RL4 sent to WebView"}
+{"timestamp":"2025-12-03T21:31:08.966Z","level":"SYSTEM","message":"✅ Initial ADRs.RL4 sent to WebView"}
+{"timestamp":"2025-12-03T21:31:11.461Z","level":"SYSTEM","message":"⏳ Waiting 2s for Extension Host to stabilize..."}
+{"timestamp":"2025-12-03T21:31:13.461Z","level":"SYSTEM","message":"✅ Extension Host ready"}
+{"timestamp":"2025-12-03T21:31:13.462Z","level":"SYSTEM","message":"🗂️  Loading kernel artifacts..."}
+{"timestamp":"2025-12-03T21:31:13.462Z","level":"SYSTEM","message":"✅ Kernel artifacts loaded"}
+{"timestamp":"2025-12-03T21:31:13.463Z","level":"SYSTEM","message":"📇 Initializing cache index..."}
+{"timestamp":"2025-12-03T21:31:13.463Z","level":"SYSTEM","message":"✅ Cache index loaded: 1 cycles indexed"}
+{"timestamp":"2025-12-03T21:31:13.463Z","level":"SYSTEM","message":"🔧 Running data normalization..."}
+{"timestamp":"2025-12-03T21:31:13.464Z","level":"SYSTEM","message":"✅ Normalization complete: 1 actions performed"}
+{"timestamp":"2025-12-03T21:31:13.464Z","level":"SYSTEM","message":"   • Checked log rotation (cycles.jsonl: 0.0 MB)"}
+{"timestamp":"2025-12-03T21:31:13.464Z","level":"SYSTEM","message":"👁️  Starting IDE activity listener..."}
+{"timestamp":"2025-12-03T21:31:13.464Z","level":"SYSTEM","message":"✅ IDE activity listener started"}
+{"timestamp":"2025-12-03T21:31:13.464Z","level":"SYSTEM","message":"🔨 Starting build metrics listener..."}
+{"timestamp":"2025-12-03T21:31:13.465Z","level":"SYSTEM","message":"✅ Build metrics listener started"}
+{"timestamp":"2025-12-03T21:31:13.465Z","level":"SYSTEM","message":"🧪 Registering cycle timer (7200000ms)..."}
+{"timestamp":"2025-12-03T21:31:13.465Z","level":"SYSTEM","message":"✅ Cycle timer registered successfully"}
+{"timestamp":"2025-12-03T21:31:13.466Z","level":"SYSTEM","message":"🧪 Registering watchdog timer (7200000ms)..."}
+{"timestamp":"2025-12-03T21:31:13.466Z","level":"SYSTEM","message":"✅ Watchdog timer registered successfully"}
+{"timestamp":"2025-12-03T21:31:13.466Z","level":"SYSTEM","message":"🛡️ Watchdog active (checking every 7200000ms)"}
+{"timestamp":"2025-12-03T21:31:13.466Z","level":"SYSTEM","message":"📊 Registering hourly summary timer (3600000ms)..."}
+{"timestamp":"2025-12-03T21:31:13.466Z","level":"SYSTEM","message":"✅ Hourly summary timer registered successfully"}
+{"timestamp":"2025-12-03T21:31:13.466Z","level":"SYSTEM","message":"✅ CognitiveScheduler fully initialized and ready"}
+{"timestamp":"2025-12-03T21:31:13.467Z","level":"SYSTEM","message":"✅ Kernel ready"}
+{"timestamp":"2025-12-03T21:31:13.469Z","level":"SYSTEM","message":"✅ TaskVerificationEngine initialized"}
+{"timestamp":"2025-12-03T21:31:14.638Z","level":"SYSTEM","message":"📊 Kernel status requested (cycle: 0, safeMode: false)"}
+{"timestamp":"2025-12-03T21:31:15.263Z","level":"SYSTEM","message":"🔥 [DEBUG] Starting cycle seq=2..."}
+{"timestamp":"2025-12-03T21:31:15.263Z","level":"CYCLE","cycle_id":1,"message":"Cycle started (silent)","metrics":{"phase":"cognitive-cycle"}}
+{"timestamp":"2025-12-03T21:31:15.263Z","level":"SYSTEM","message":"📥 Reloading Plan/Tasks/Context.RL4..."}
+{"timestamp":"2025-12-03T21:31:15.263Z","level":"SYSTEM","message":"✅ Reloaded: Plan=moon est un outil de gestion de monorepo écrit en Rust avec des packages npm associés. Le projet se concentre sur la stabilisation du core Rust (config, graph, diagnostics, code owners) tout en migrant progressivement la zone legacy vers proto/WASM. Les priorités actuelles incluent l'amélioration des diagnostics, la config partagée/code owners, l'optimisation 'affected projects' et la migration legacy. Les conventions strictes (tests verts obligatoires, formatage auto, semver strict, master compatible stable) et les zones critiques (config/graph, proto/WASM) nécessitent une gouvernance rigoureuse., Tasks=0 active, Context=N/A confidence"}
+{"timestamp":"2025-12-03T21:31:15.266Z","level":"SYSTEM","message":"🔥 [DEBUG] After cycleStart(), before calculating input hash..."}
+{"timestamp":"2025-12-03T21:31:15.266Z","level":"SYSTEM","message":"🔥 [DEBUG] Calling calculateInputHash()..."}
+{"timestamp":"2025-12-03T21:31:15.268Z","level":"SYSTEM","message":"🔥 [DEBUG] calculateInputHash() returned: c46361e7421fcb64"}
+{"timestamp":"2025-12-03T21:31:15.272Z","level":"WARNING","message":"[UnifiedPromptBuilder] Codec fallback triggered: timeline_insufficient: <3 ledger events"}
+{"timestamp":"2025-12-03T21:31:15.284Z","level":"CYCLE","cycle_id":1,"phase":"complete","message":"Cycle #1 completed (silent)","metrics":{"patterns":0,"correlations":0,"forecasts":0,"adrs":0,"duration_ms":21,"health":{"drift":0.30073030159867753,"coherence":0.7030277215477181,"status":"stable"}}}
+{"timestamp":"2025-12-03T21:31:15.284Z","level":"SYSTEM","message":"✅ Kernel KPIs calculated (Cycle 1) - event emitted for LLM integration"}
+{"timestamp":"2025-12-03T21:31:15.287Z","level":"SYSTEM","message":"📋 Generating snapshot (mode: flexible)..."}
+{"timestamp":"2025-12-03T21:31:15.296Z","level":"SYSTEM","message":"System Metrics","metrics":{"heap_used_mb":156.52,"event_loop_delay_ms":10,"queue_depth":0}}
+{"timestamp":"2025-12-03T21:31:15.322Z","level":"WARNING","message":"[UnifiedPromptBuilder] Codec fallback triggered: timeline_insufficient: <3 valid ledger events after filtering"}
+{"timestamp":"2025-12-03T21:31:15.324Z","level":"SYSTEM","message":"[P7.6] Codec metadata: present, status=fallback, reason=timeline_insufficient: <3 valid ledger events after filtering"}
+{"timestamp":"2025-12-03T21:31:15.324Z","level":"SYSTEM","message":"[P7.6] Sending snapshotMetadata: {\"codecStatus\":\"fallback\",\"codecReason\":\"timeline_insufficient: <3 valid ledger events after filtering\",\"codec_readiness\":{\"ready\":false,\"blockers\":[\"timeline_insufficient: <3 valid ledger events after filtering\"],\"warnings\":[],\"timelineCount\":3,\"dnaCount\":1},\"agentIntent\":\"SNAPSHOT_WRITE\",\"snapshotMode\":\"flexible\"}"}
+{"timestamp":"2025-12-03T21:31:15.327Z","level":"SYSTEM","message":"✅ Snapshot generated (5724 chars)"}
+{"timestamp":"2025-12-03T21:32:07.073Z","level":"SYSTEM","message":"💡 Generating task suggestions..."}
+{"timestamp":"2025-12-03T21:32:07.076Z","level":"SYSTEM","message":"✅ Generated 0 suggestions for 0 tasks"}
+{"timestamp":"2025-12-03T21:32:08.408Z","level":"SYSTEM","message":"Memory check: 164.63 MB (Δ+19.41 MB)"}
+{"timestamp":"2025-12-03T21:32:32.177Z","level":"SYSTEM","message":"🔍 Context.RL4 changed, refreshing..."}
+{"timestamp":"2025-12-03T21:32:32.179Z","level":"SYSTEM","message":"✅ Context.RL4 sent to WebView for KPI update"}
+{"timestamp":"2025-12-03T21:32:32.573Z","level":"SYSTEM","message":"📥 Context.RL4 modified externally, triggering cycle..."}
+{"timestamp":"2025-12-03T21:32:32.574Z","level":"SYSTEM","message":"🔥 [DEBUG] Starting cycle seq=4..."}
+{"timestamp":"2025-12-03T21:32:32.574Z","level":"CYCLE","cycle_id":2,"message":"Cycle started (silent)","metrics":{"phase":"cognitive-cycle"}}
+{"timestamp":"2025-12-03T21:32:32.575Z","level":"SYSTEM","message":"📥 Reloading Plan/Tasks/Context.RL4..."}
+{"timestamp":"2025-12-03T21:32:32.575Z","level":"SYSTEM","message":"✅ Reloaded: Plan=moon est un outil de gestion de monorepo écrit en Rust avec des packages npm associés. Le projet se concentre sur la stabilisation du core Rust (config, graph, diagnostics, code owners) tout en migrant progressivement la zone legacy vers proto/WASM. Les priorités actuelles incluent l'amélioration des diagnostics, la config partagée/code owners, l'optimisation 'affected projects' et la migration legacy. Les conventions strictes (tests verts obligatoires, formatage auto, semver strict, master compatible stable) et les zones critiques (config/graph, proto/WASM) nécessitent une gouvernance rigoureuse., Tasks=0 active, Context=N/A confidence"}
+{"timestamp":"2025-12-03T21:32:32.577Z","level":"SYSTEM","message":"🔥 [DEBUG] After cycleStart(), before calculating input hash..."}
+{"timestamp":"2025-12-03T21:32:32.578Z","level":"SYSTEM","message":"🔥 [DEBUG] Calling calculateInputHash()..."}
+{"timestamp":"2025-12-03T21:32:32.578Z","level":"SYSTEM","message":"🔥 [DEBUG] calculateInputHash() returned: 5a5dc9b473eb25a4"}
+{"timestamp":"2025-12-03T21:32:32.580Z","level":"WARNING","message":"[UnifiedPromptBuilder] Codec fallback triggered: timeline_insufficient: <3 valid ledger events after filtering"}
+{"timestamp":"2025-12-03T21:32:32.598Z","level":"CYCLE","cycle_id":2,"phase":"complete","message":"Cycle #2 completed (silent)","metrics":{"patterns":0,"correlations":0,"forecasts":0,"adrs":0,"duration_ms":24,"health":{"drift":0.016198086102218012,"coherence":0.7351527544691118,"status":"stable"}}}
+{"timestamp":"2025-12-03T21:32:32.598Z","level":"SYSTEM","message":"✅ Kernel KPIs calculated (Cycle 2) - event emitted for LLM integration"}
+{"timestamp":"2025-12-03T21:32:32.604Z","level":"SYSTEM","message":"✅ Cycle completed after Context.RL4 modification"}
+{"timestamp":"2025-12-03T21:32:32.604Z","level":"SYSTEM","message":"System Metrics","metrics":{"heap_used_mb":172.85,"event_loop_delay_ms":0,"queue_depth":0}}
+{"timestamp":"2025-12-03T21:32:33.611Z","level":"SYSTEM","message":"✅ Tasks.RL4 changed, updating state..."}
+{"timestamp":"2025-12-03T21:32:34.108Z","level":"SYSTEM","message":"✅ TaskVerificationEngine reloaded after Tasks.RL4 modification"}
+{"timestamp":"2025-12-03T21:32:34.108Z","level":"SYSTEM","message":"📥 Tasks.RL4 modified externally, triggering cycle..."}
+{"timestamp":"2025-12-03T21:32:34.109Z","level":"SYSTEM","message":"⏳ Cycle cooldown active (28473ms remaining) - skipping"}
+{"timestamp":"2025-12-03T21:32:34.110Z","level":"SYSTEM","message":"✅ Cycle completed after Tasks.RL4 modification"}
+{"timestamp":"2025-12-03T21:32:35.066Z","level":"SYSTEM","message":"📋 Plan.RL4 changed, recalculating metrics..."}
+{"timestamp":"2025-12-03T21:32:35.545Z","level":"SYSTEM","message":"📥 Plan.RL4 modified externally, triggering cycle..."}
+{"timestamp":"2025-12-03T21:32:35.545Z","level":"SYSTEM","message":"⏳ Cycle cooldown active (27037ms remaining) - skipping"}
+{"timestamp":"2025-12-03T21:32:35.545Z","level":"SYSTEM","message":"✅ Cycle completed after Plan.RL4 modification"}
+{"timestamp":"2025-12-03T21:32:35.757Z","level":"SYSTEM","message":"📋 Plan.RL4 changed, recalculating metrics..."}
+{"timestamp":"2025-12-03T21:32:36.197Z","level":"SYSTEM","message":"📥 Plan.RL4 modified externally, triggering cycle..."}
+{"timestamp":"2025-12-03T21:32:36.197Z","level":"SYSTEM","message":"⏳ Cycle cooldown active (26385ms remaining) - skipping"}
+{"timestamp":"2025-12-03T21:32:36.197Z","level":"SYSTEM","message":"✅ Cycle completed after Plan.RL4 modification"}
+{"timestamp":"2025-12-03T21:32:57.888Z","level":"SYSTEM","message":"📜 ADRs.RL4 changed, processing..."}
+{"timestamp":"2025-12-03T21:33:08.368Z","level":"SYSTEM","message":"Memory check: 148.28 MB (Δ+3.06 MB)"}
+{"timestamp":"2025-12-03T21:34:08.373Z","level":"SYSTEM","message":"Memory check: 150.35 MB (Δ+5.13 MB)"}
+{"timestamp":"2025-12-03T21:34:10.619Z","level":"SYSTEM","message":"💡 Generating task suggestions..."}
+{"timestamp":"2025-12-03T21:34:10.620Z","level":"SYSTEM","message":"✅ Generated 0 suggestions for 0 tasks"}
+{"timestamp":"2025-12-03T21:35:08.371Z","level":"SYSTEM","message":"Memory check: 147.5 MB (Δ+2.28 MB)"}
+{"timestamp":"2025-12-03T21:36:08.359Z","level":"SYSTEM","message":"Memory: 147.82 MB (Δ+2.61 MB, avg: 147.82 MB, peak: 147.82 MB)"}
+{"timestamp":"2025-12-03T21:36:08.372Z","level":"SYSTEM","message":"Memory check: 146.61 MB (Δ+1.39 MB)"}
+{"timestamp":"2025-12-03T21:37:08.372Z","level":"SYSTEM","message":"Memory check: 148.18 MB (Δ+2.96 MB)"}
+{"timestamp":"2025-12-03T21:37:57.157Z","level":"SYSTEM","message":"📊 Kernel status requested (cycle: 2, safeMode: false)"}
+{"timestamp":"2025-12-03T21:37:58.894Z","level":"SYSTEM","message":"💡 Generating task suggestions..."}
+{"timestamp":"2025-12-03T21:37:58.894Z","level":"SYSTEM","message":"✅ Generated 0 suggestions for 0 tasks"}
+{"timestamp":"2025-12-03T21:38:08.379Z","level":"SYSTEM","message":"Memory check: 148.08 MB (Δ+2.86 MB)"}
+{"timestamp":"2025-12-03T21:39:08.381Z","level":"SYSTEM","message":"Memory check: 148.6 MB (Δ+3.38 MB)"}
+{"timestamp":"2025-12-03T21:40:08.382Z","level":"SYSTEM","message":"Memory check: 149.1 MB (Δ+3.88 MB)"}
+{"timestamp":"2025-12-03T21:41:08.357Z","level":"SYSTEM","message":"Memory: 150.45 MB (Δ+5.24 MB, avg: 147.82 MB, peak: 147.82 MB)"}
+{"timestamp":"2025-12-03T21:41:08.384Z","level":"SYSTEM","message":"Memory check: 150.54 MB (Δ+5.32 MB)"}
+{"timestamp":"2025-12-03T21:42:08.385Z","level":"SYSTEM","message":"Memory check: 150.97 MB (Δ+5.75 MB)"}
+{"timestamp":"2025-12-03T21:43:08.389Z","level":"SYSTEM","message":"Memory check: 151.81 MB (Δ+6.59 MB)"}
+{"timestamp":"2025-12-03T21:44:08.395Z","level":"SYSTEM","message":"Memory check: 151.61 MB (Δ+6.39 MB)"}
+{"timestamp":"2025-12-03T21:45:08.398Z","level":"SYSTEM","message":"Memory check: 151.82 MB (Δ+6.6 MB)"}
+{"timestamp":"2025-12-03T21:46:08.356Z","level":"SYSTEM","message":"Memory: 153.01 MB (Δ+7.8 MB, avg: 149.13 MB, peak: 150.45 MB)"}
+{"timestamp":"2025-12-03T21:46:08.402Z","level":"SYSTEM","message":"Memory check: 153.05 MB (Δ+7.83 MB)"}
+{"timestamp":"2025-12-03T21:47:08.406Z","level":"SYSTEM","message":"Memory check: 154.55 MB (Δ+9.33 MB)"}
+{"timestamp":"2025-12-03T21:48:08.407Z","level":"SYSTEM","message":"Memory check: 153.49 MB (Δ+8.27 MB)"}
+{"timestamp":"2025-12-03T21:49:08.411Z","level":"SYSTEM","message":"Memory check: 153.86 MB (Δ+8.64 MB)"}
+{"timestamp":"2025-12-03T21:50:08.411Z","level":"SYSTEM","message":"Memory check: 154.19 MB (Δ+8.97 MB)"}
+{"timestamp":"2025-12-03T21:51:08.357Z","level":"SYSTEM","message":"Memory: 154.98 MB (Δ+9.77 MB, avg: 150.43 MB, peak: 153.01 MB)"}
+{"timestamp":"2025-12-03T21:51:08.411Z","level":"SYSTEM","message":"Memory check: 155.03 MB (Δ+9.81 MB)"}
+{"timestamp":"2025-12-03T21:52:08.415Z","level":"SYSTEM","message":"Memory check: 155.45 MB (Δ+10.23 MB)"}
+{"timestamp":"2025-12-03T21:53:08.420Z","level":"SYSTEM","message":"Memory check: 155.94 MB (Δ+10.72 MB)"}
+{"timestamp":"2025-12-03T21:53:52.884Z","level":"SYSTEM","message":"🛑 RL4 Kernel deactivating..."}
+{"timestamp":"2025-12-03T21:53:52.885Z","level":"SYSTEM","message":"🎧 ShellMessageCapture stoppé"}
+{"timestamp":"2025-12-03T21:53:52.885Z","level":"SYSTEM","message":"🧹 Disposing event listeners..."}
+{"timestamp":"2025-12-03T21:53:52.885Z","level":"SYSTEM","message":"✅ IDEActivityListener disposed"}
+{"timestamp":"2025-12-03T21:53:52.885Z","level":"SYSTEM","message":"✅ BuildMetricsListener disposed"}
+{"timestamp":"2025-12-03T21:53:52.885Z","level":"SYSTEM","message":"✅ Event listeners disposed"}
+{"timestamp":"2025-12-03T21:53:52.885Z","level":"SYSTEM","message":"✅ Status Bar disposed"}
+{"timestamp":"2025-12-03T21:53:52.885Z","level":"SYSTEM","message":"🖥️ WebView disposed"}
+{"timestamp":"2025-12-03T21:53:52.886Z","level":"SYSTEM","message":"✅ WebView disposed"}
+{"timestamp":"2025-12-03T21:53:52.886Z","level":"SYSTEM","message":"✅ Timers cleared"}
+{"timestamp":"2025-12-03T21:53:52.886Z","level":"SYSTEM","message":"📊 Memory Monitor disposed"}
+{"timestamp":"2025-12-03T21:53:52.886Z","level":"SYSTEM","message":"🐕 Memory Watchdog stopped"}
+{"timestamp":"2025-12-03T21:53:52.886Z","level":"SYSTEM","message":"🐕 Memory Watchdog disposed"}
+{"timestamp":"2025-12-03T21:53:52.896Z","level":"SYSTEM","message":"✅ Kernel shutdown complete"}
+{"timestamp":"2025-12-03T21:53:52.897Z","level":"SYSTEM","message":"🧠 RL4 Kernel deactivated cleanly"}
+{"timestamp":"2025-12-03T21:53:58.530Z","level":"SYSTEM","message":"=== RL4 KERNEL — Cognitive Console ==="}
+{"timestamp":"2025-12-03T21:53:58.530Z","level":"SYSTEM","message":"Workspace: /Users/valentingaludec/Downloads/moon-master"}
+{"timestamp":"2025-12-03T21:53:58.530Z","level":"SYSTEM","message":"====================================="}
+{"timestamp":"2025-12-03T21:53:58.530Z","level":"SYSTEM","message":"📊 Memory Monitor initialized (baseline: 142.88 MB)"}
+{"timestamp":"2025-12-03T21:53:58.531Z","level":"SYSTEM","message":"🐕 Memory Watchdog started (threshold: 500 MB)"}
+{"timestamp":"2025-12-03T21:53:58.531Z","level":"SYSTEM","message":"🐕 Memory Watchdog started (threshold: 500 MB)"}
+{"timestamp":"2025-12-03T21:53:58.531Z","level":"SYSTEM","message":"🎧 ShellMessageCapture initialisé"}
+{"timestamp":"2025-12-03T21:53:58.531Z","level":"SYSTEM","message":"🗂️ ConversationLogger prêt"}
+{"timestamp":"2025-12-03T21:53:58.531Z","level":"SYSTEM","message":"🔧 Initializing RL4 Kernel..."}
+{"timestamp":"2025-12-03T21:53:58.533Z","level":"SYSTEM","message":"✅ RL4 Kernel components created"}
+{"timestamp":"2025-12-03T21:53:58.533Z","level":"SYSTEM","message":"[BOOTSTRAP] Workspace /Users/valentingaludec/Downloads/moon-master is ready"}
+{"timestamp":"2025-12-03T21:53:58.585Z","level":"SYSTEM","message":"🔍 Workspace detected: mode=new, firstUse=extended, isLarge=true, requiresGitHub=false"}
+{"timestamp":"2025-12-03T21:53:58.585Z","level":"SYSTEM","message":"   → Large project detected: 779 source files"}
+{"timestamp":"2025-12-03T21:53:58.586Z","level":"SYSTEM","message":"[BOOTSTRAP] RL4 files already exist, skipping initial generation"}
+{"timestamp":"2025-12-03T21:53:58.588Z","level":"WARNING","message":"No kernel artifacts found, starting with default baseline (0.73)"}
+{"timestamp":"2025-12-03T21:53:58.589Z","level":"SYSTEM","message":"❤️ Health Monitor started"}
+{"timestamp":"2025-12-03T21:53:58.589Z","level":"SYSTEM","message":"🧠 Starting CognitiveScheduler (delayed start in 3s)..."}
+{"timestamp":"2025-12-03T21:53:58.589Z","level":"SYSTEM","message":"✅ Status Bar item created"}
+{"timestamp":"2025-12-03T21:53:58.590Z","level":"SYSTEM","message":"🖥️ Creating RL4 Dashboard WebView..."}
+{"timestamp":"2025-12-03T21:53:58.591Z","level":"SYSTEM","message":"✅ WebView HTML loaded"}
+{"timestamp":"2025-12-03T21:53:58.593Z","level":"SYSTEM","message":"✅ RL4 Rule already up-to-date in .cursor/rules"}
+{"timestamp":"2025-12-03T21:53:58.594Z","level":"SYSTEM","message":"✅ FileWatchers registered for Plan/Tasks/Context/ADRs.RL4"}
+{"timestamp":"2025-12-03T21:53:58.594Z","level":"SYSTEM","message":"✅ RL4 Kernel activated"}
+{"timestamp":"2025-12-03T21:53:58.594Z","level":"SYSTEM","message":"🎯 8 commands registered (4 kernel + 3 ADR validation + 1 webview)"}
+{"timestamp":"2025-12-03T21:53:58.594Z","level":"SYSTEM","message":"🖥️ Dashboard auto-opened in column 2"}
+{"timestamp":"2025-12-03T21:53:58.915Z","level":"SYSTEM","message":"[Git] Repository not detected — disabling git-based metrics"}
+{"timestamp":"2025-12-03T21:53:59.094Z","level":"SYSTEM","message":"✅ Initial Context.RL4 sent to WebView"}
+{"timestamp":"2025-12-03T21:53:59.095Z","level":"SYSTEM","message":"⚠️ proposals.json not found or empty (will show empty state)"}
+{"timestamp":"2025-12-03T21:53:59.096Z","level":"SYSTEM","message":"✅ Initial Tasks.RL4 sent to WebView"}
+{"timestamp":"2025-12-03T21:53:59.099Z","level":"SYSTEM","message":"✅ Initial ADRs.RL4 sent to WebView"}
+{"timestamp":"2025-12-03T21:53:59.121Z","level":"SYSTEM","message":"[AutoTasks] Collected 1 artifacts, 1 clusters"}
+{"timestamp":"2025-12-03T21:54:01.595Z","level":"SYSTEM","message":"⏳ Waiting 2s for Extension Host to stabilize..."}
+{"timestamp":"2025-12-03T21:54:03.595Z","level":"SYSTEM","message":"✅ Extension Host ready"}
+{"timestamp":"2025-12-03T21:54:03.595Z","level":"SYSTEM","message":"🗂️  Loading kernel artifacts..."}
+{"timestamp":"2025-12-03T21:54:03.596Z","level":"SYSTEM","message":"✅ Kernel artifacts loaded"}
+{"timestamp":"2025-12-03T21:54:03.596Z","level":"SYSTEM","message":"📇 Initializing cache index..."}
+{"timestamp":"2025-12-03T21:54:03.597Z","level":"SYSTEM","message":"✅ Cache index loaded: 2 cycles indexed"}
+{"timestamp":"2025-12-03T21:54:03.597Z","level":"SYSTEM","message":"🔧 Running data normalization..."}
+{"timestamp":"2025-12-03T21:54:03.598Z","level":"SYSTEM","message":"✅ Normalization complete: 1 actions performed"}
+{"timestamp":"2025-12-03T21:54:03.598Z","level":"SYSTEM","message":"   • Checked log rotation (cycles.jsonl: 0.0 MB)"}
+{"timestamp":"2025-12-03T21:54:03.598Z","level":"SYSTEM","message":"👁️  Starting IDE activity listener..."}
+{"timestamp":"2025-12-03T21:54:03.600Z","level":"SYSTEM","message":"✅ IDE activity listener started"}
+{"timestamp":"2025-12-03T21:54:03.600Z","level":"SYSTEM","message":"🔨 Starting build metrics listener..."}
+{"timestamp":"2025-12-03T21:54:03.602Z","level":"SYSTEM","message":"✅ Build metrics listener started"}
+{"timestamp":"2025-12-03T21:54:03.602Z","level":"SYSTEM","message":"🧪 Registering cycle timer (7200000ms)..."}
+{"timestamp":"2025-12-03T21:54:03.603Z","level":"SYSTEM","message":"✅ Cycle timer registered successfully"}
+{"timestamp":"2025-12-03T21:54:03.604Z","level":"SYSTEM","message":"🧪 Registering watchdog timer (7200000ms)..."}
+{"timestamp":"2025-12-03T21:54:03.605Z","level":"SYSTEM","message":"✅ Watchdog timer registered successfully"}
+{"timestamp":"2025-12-03T21:54:03.605Z","level":"SYSTEM","message":"🛡️ Watchdog active (checking every 7200000ms)"}
+{"timestamp":"2025-12-03T21:54:03.606Z","level":"SYSTEM","message":"📊 Registering hourly summary timer (3600000ms)..."}
+{"timestamp":"2025-12-03T21:54:03.606Z","level":"SYSTEM","message":"✅ Hourly summary timer registered successfully"}
+{"timestamp":"2025-12-03T21:54:03.606Z","level":"SYSTEM","message":"✅ CognitiveScheduler fully initialized and ready"}
+{"timestamp":"2025-12-03T21:54:03.608Z","level":"SYSTEM","message":"✅ Kernel ready"}
+{"timestamp":"2025-12-03T21:54:03.612Z","level":"SYSTEM","message":"✅ TaskVerificationEngine initialized"}
+{"timestamp":"2025-12-03T21:54:04.856Z","level":"SYSTEM","message":"📊 Kernel status requested (cycle: 0, safeMode: false)"}
+{"timestamp":"2025-12-03T21:54:58.531Z","level":"SYSTEM","message":"Memory check: 166.9 MB (Δ+24.02 MB)"}
+{"timestamp":"2025-12-03T21:55:58.533Z","level":"SYSTEM","message":"Memory check: 140.82 MB (Δ-2.06 MB)"}
+{"timestamp":"2025-12-03T21:56:23.320Z","level":"SYSTEM","message":"✅ Tasks.RL4 changed, updating state..."}
+{"timestamp":"2025-12-03T21:56:23.739Z","level":"SYSTEM","message":"✅ TaskVerificationEngine reloaded after Tasks.RL4 modification"}
+{"timestamp":"2025-12-03T21:56:23.739Z","level":"SYSTEM","message":"📥 Tasks.RL4 modified externally, triggering cycle..."}
+{"timestamp":"2025-12-03T21:56:23.743Z","level":"SYSTEM","message":"🔥 [DEBUG] Starting cycle seq=2..."}
+{"timestamp":"2025-12-03T21:56:23.743Z","level":"CYCLE","cycle_id":1,"message":"Cycle started (silent)","metrics":{"phase":"cognitive-cycle"}}
+{"timestamp":"2025-12-03T21:56:23.744Z","level":"SYSTEM","message":"📥 Reloading Plan/Tasks/Context.RL4..."}
+{"timestamp":"2025-12-03T21:56:23.744Z","level":"SYSTEM","message":"✅ Reloaded: Plan=moon est un outil de gestion de monorepo écrit en Rust avec des packages npm associés. Le projet se concentre sur la stabilisation du core Rust (config, graph, diagnostics, code owners) tout en migrant progressivement la zone legacy vers proto/WASM. Les priorités actuelles incluent l'amélioration des diagnostics, la config partagée/code owners, l'optimisation 'affected projects' et la migration legacy. Les conventions strictes (tests verts obligatoires, formatage auto, semver strict, master compatible stable) et les zones critiques (config/graph, proto/WASM) nécessitent une gouvernance rigoureuse., Tasks=6 active, Context=N/A confidence"}
+{"timestamp":"2025-12-03T21:56:23.746Z","level":"SYSTEM","message":"🔥 [DEBUG] After cycleStart(), before calculating input hash..."}
+{"timestamp":"2025-12-03T21:56:23.747Z","level":"SYSTEM","message":"🔥 [DEBUG] Calling calculateInputHash()..."}
+{"timestamp":"2025-12-03T21:56:23.748Z","level":"SYSTEM","message":"🔥 [DEBUG] calculateInputHash() returned: b334496c84b03d9a"}
+{"timestamp":"2025-12-03T21:56:23.753Z","level":"WARNING","message":"[UnifiedPromptBuilder] Codec fallback triggered: codec_payload_exceeds_budget"}
+{"timestamp":"2025-12-03T21:56:23.763Z","level":"CYCLE","cycle_id":1,"phase":"complete","message":"Cycle #1 completed (silent)","metrics":{"patterns":0,"correlations":0,"forecasts":0,"adrs":0,"duration_ms":20,"health":{"drift":0.25801573818950446,"coherence":0.9857840044834121,"status":"stable"}}}
+{"timestamp":"2025-12-03T21:56:23.763Z","level":"SYSTEM","message":"✅ Kernel KPIs calculated (Cycle 1) - event emitted for LLM integration"}
+{"timestamp":"2025-12-03T21:56:23.767Z","level":"SYSTEM","message":"✅ Cycle completed after Tasks.RL4 modification"}
+{"timestamp":"2025-12-03T21:56:23.768Z","level":"SYSTEM","message":"System Metrics","metrics":{"heap_used_mb":148.11,"event_loop_delay_ms":1,"queue_depth":0}}
+{"timestamp":"2025-12-03T21:56:46.972Z","level":"SYSTEM","message":"💡 Generating task suggestions..."}
+{"timestamp":"2025-12-03T21:56:46.974Z","level":"SYSTEM","message":"✅ Generated 0 suggestions for 0 tasks"}
+{"timestamp":"2025-12-03T21:56:46.996Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T21:56:47.014Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T21:56:58.535Z","level":"SYSTEM","message":"Memory check: 144.16 MB (Δ+1.28 MB)"}
+{"timestamp":"2025-12-03T21:57:50.537Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T21:57:58.536Z","level":"SYSTEM","message":"Memory check: 145.64 MB (Δ+2.76 MB)"}
+{"timestamp":"2025-12-03T21:58:47.001Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T21:58:58.538Z","level":"SYSTEM","message":"Memory: 140.85 MB (Δ-2.03 MB, avg: 140.85 MB, peak: 140.85 MB)"}
+{"timestamp":"2025-12-03T21:58:58.540Z","level":"SYSTEM","message":"Memory check: 140.86 MB (Δ-2.02 MB)"}
+{"timestamp":"2025-12-03T21:59:58.545Z","level":"SYSTEM","message":"Memory check: 142.43 MB (Δ-0.45 MB)"}
+{"timestamp":"2025-12-03T22:00:47.749Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:00:58.549Z","level":"SYSTEM","message":"Memory check: 143.23 MB (Δ+0.35 MB)"}
+{"timestamp":"2025-12-03T22:01:58.553Z","level":"SYSTEM","message":"Memory check: 143.65 MB (Δ+0.77 MB)"}
+{"timestamp":"2025-12-03T22:02:47.748Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:02:58.557Z","level":"SYSTEM","message":"Memory check: 144.34 MB (Δ+1.46 MB)"}
+{"timestamp":"2025-12-03T22:03:58.536Z","level":"SYSTEM","message":"Memory: 148.5 MB (Δ+5.62 MB, avg: 140.86 MB, peak: 140.86 MB)"}
+{"timestamp":"2025-12-03T22:03:58.559Z","level":"SYSTEM","message":"Memory check: 147.2 MB (Δ+4.32 MB)"}
+{"timestamp":"2025-12-03T22:04:47.790Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:04:58.608Z","level":"SYSTEM","message":"Memory check: 148.79 MB (Δ+5.91 MB)"}
+{"timestamp":"2025-12-03T22:05:58.617Z","level":"SYSTEM","message":"Memory check: 149.34 MB (Δ+6.46 MB)"}
+{"timestamp":"2025-12-03T22:06:47.797Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:06:58.620Z","level":"SYSTEM","message":"Memory check: 150.47 MB (Δ+7.59 MB)"}
+{"timestamp":"2025-12-03T22:07:58.622Z","level":"SYSTEM","message":"Memory check: 151.2 MB (Δ+8.32 MB)"}
+{"timestamp":"2025-12-03T22:08:47.797Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:08:58.585Z","level":"SYSTEM","message":"Memory: 138.14 MB (Δ-4.74 MB, avg: 144.69 MB, peak: 148.51 MB)"}
+{"timestamp":"2025-12-03T22:08:58.627Z","level":"SYSTEM","message":"Memory check: 138.18 MB (Δ-4.7 MB)"}
+{"timestamp":"2025-12-03T22:09:58.631Z","level":"SYSTEM","message":"Memory check: 138.35 MB (Δ-4.53 MB)"}
+{"timestamp":"2025-12-03T22:10:58.637Z","level":"SYSTEM","message":"Memory check: 139.02 MB (Δ-3.86 MB)"}
+{"timestamp":"2025-12-03T22:11:02.810Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:11:58.637Z","level":"SYSTEM","message":"Memory check: 139.8 MB (Δ-3.08 MB)"}
+{"timestamp":"2025-12-03T22:12:58.640Z","level":"SYSTEM","message":"Memory check: 140.6 MB (Δ-2.28 MB)"}
+{"timestamp":"2025-12-03T22:13:02.805Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:13:58.592Z","level":"SYSTEM","message":"Memory: 144.05 MB (Δ+1.17 MB, avg: 142.51 MB, peak: 148.51 MB)"}
+{"timestamp":"2025-12-03T22:13:58.642Z","level":"SYSTEM","message":"Memory check: 144.08 MB (Δ+1.2 MB)"}
+{"timestamp":"2025-12-03T22:14:58.646Z","level":"SYSTEM","message":"Memory check: 144.67 MB (Δ+1.79 MB)"}
+{"timestamp":"2025-12-03T22:15:02.810Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:15:58.649Z","level":"SYSTEM","message":"Memory check: 144.89 MB (Δ+2.01 MB)"}
+{"timestamp":"2025-12-03T22:16:58.653Z","level":"SYSTEM","message":"Memory check: 145.34 MB (Δ+2.46 MB)"}
+{"timestamp":"2025-12-03T22:17:02.815Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:17:58.653Z","level":"SYSTEM","message":"Memory check: 146.5 MB (Δ+3.62 MB)"}
+{"timestamp":"2025-12-03T22:18:58.596Z","level":"SYSTEM","message":"Memory: 131.32 MB (Δ-11.56 MB, avg: 142.89 MB, peak: 148.51 MB)"}
+{"timestamp":"2025-12-03T22:18:58.654Z","level":"SYSTEM","message":"Memory check: 131.37 MB (Δ-11.51 MB)"}
+{"timestamp":"2025-12-03T22:19:03.076Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:19:58.661Z","level":"SYSTEM","message":"Memory check: 132.98 MB (Δ-9.9 MB)"}
+{"timestamp":"2025-12-03T22:20:47.044Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:20:58.666Z","level":"SYSTEM","message":"Memory check: 130.97 MB (Δ-11.91 MB)"}
+{"timestamp":"2025-12-03T22:21:27.837Z","level":"SYSTEM","message":"🔥 [DEBUG] Starting cycle seq=4..."}
+{"timestamp":"2025-12-03T22:21:27.838Z","level":"CYCLE","cycle_id":2,"message":"Cycle started (silent)","metrics":{"phase":"cognitive-cycle"}}
+{"timestamp":"2025-12-03T22:21:27.838Z","level":"SYSTEM","message":"📥 Reloading Plan/Tasks/Context.RL4..."}
+{"timestamp":"2025-12-03T22:21:27.839Z","level":"SYSTEM","message":"✅ Reloaded: Plan=moon est un outil de gestion de monorepo écrit en Rust avec des packages npm associés. Le projet se concentre sur la stabilisation du core Rust (config, graph, diagnostics, code owners) tout en migrant progressivement la zone legacy vers proto/WASM. Les priorités actuelles incluent l'amélioration des diagnostics, la config partagée/code owners, l'optimisation 'affected projects' et la migration legacy. Les conventions strictes (tests verts obligatoires, formatage auto, semver strict, master compatible stable) et les zones critiques (config/graph, proto/WASM) nécessitent une gouvernance rigoureuse., Tasks=6 active, Context=N/A confidence"}
+{"timestamp":"2025-12-03T22:21:27.841Z","level":"SYSTEM","message":"🔥 [DEBUG] After cycleStart(), before calculating input hash..."}
+{"timestamp":"2025-12-03T22:21:27.841Z","level":"SYSTEM","message":"🔥 [DEBUG] Calling calculateInputHash()..."}
+{"timestamp":"2025-12-03T22:21:27.843Z","level":"SYSTEM","message":"🔥 [DEBUG] calculateInputHash() returned: 433a0fb7481ab100"}
+{"timestamp":"2025-12-03T22:21:27.846Z","level":"WARNING","message":"[UnifiedPromptBuilder] Codec fallback triggered: codec_payload_exceeds_budget"}
+{"timestamp":"2025-12-03T22:21:27.864Z","level":"CYCLE","cycle_id":2,"phase":"complete","message":"Cycle #2 completed (silent)","metrics":{"patterns":0,"correlations":0,"forecasts":0,"adrs":0,"duration_ms":26,"health":{"drift":0.20584563337752393,"coherence":0.7169301409874097,"status":"stable"}}}
+{"timestamp":"2025-12-03T22:21:27.864Z","level":"SYSTEM","message":"✅ Kernel KPIs calculated (Cycle 2) - event emitted for LLM integration"}
+{"timestamp":"2025-12-03T22:21:27.867Z","level":"SYSTEM","message":"📋 Generating snapshot (mode: flexible)..."}
+{"timestamp":"2025-12-03T22:21:27.893Z","level":"SYSTEM","message":"System Metrics","metrics":{"heap_used_mb":132.61,"event_loop_delay_ms":26,"queue_depth":0}}
+{"timestamp":"2025-12-03T22:21:27.917Z","level":"WARNING","message":"[UnifiedPromptBuilder] Codec fallback triggered: codec_payload_exceeds_budget"}
+{"timestamp":"2025-12-03T22:21:27.933Z","level":"SYSTEM","message":"[AutoTasks] Collected 2 artifacts, 2 clusters"}
+{"timestamp":"2025-12-03T22:21:27.933Z","level":"SYSTEM","message":"[P7.6] Codec metadata: present, status=fallback, reason=codec_payload_exceeds_budget"}
+{"timestamp":"2025-12-03T22:21:27.933Z","level":"SYSTEM","message":"[P7.6] Sending snapshotMetadata: {\"codecStatus\":\"fallback\",\"codecReason\":\"codec_payload_exceeds_budget\",\"codec_readiness\":{\"ready\":false,\"blockers\":[\"codec_payload_exceeds_budget\"],\"warnings\":[],\"timelineCount\":6,\"dnaCount\":6},\"agentIntent\":\"SNAPSHOT_WRITE\",\"snapshotMode\":\"flexible\"}"}
+{"timestamp":"2025-12-03T22:21:27.939Z","level":"SYSTEM","message":"✅ Snapshot generated (6514 chars)"}
+{"timestamp":"2025-12-03T22:21:58.672Z","level":"SYSTEM","message":"Memory check: 133.81 MB (Δ-9.07 MB)"}
+{"timestamp":"2025-12-03T22:22:58.677Z","level":"SYSTEM","message":"Memory check: 134.93 MB (Δ-7.95 MB)"}
+{"timestamp":"2025-12-03T22:23:58.600Z","level":"SYSTEM","message":"Memory: 137.63 MB (Δ-5.25 MB, avg: 140.58 MB, peak: 148.51 MB)"}
+{"timestamp":"2025-12-03T22:23:58.680Z","level":"SYSTEM","message":"Memory check: 137.69 MB (Δ-5.19 MB)"}
+{"timestamp":"2025-12-03T22:24:58.686Z","level":"SYSTEM","message":"Memory check: 139.06 MB (Δ-3.82 MB)"}
+{"timestamp":"2025-12-03T22:25:58.688Z","level":"SYSTEM","message":"Memory check: 139.83 MB (Δ-3.05 MB)"}
+{"timestamp":"2025-12-03T22:26:58.688Z","level":"SYSTEM","message":"Memory check: 140.55 MB (Δ-2.33 MB)"}
+{"timestamp":"2025-12-03T22:27:58.690Z","level":"SYSTEM","message":"Memory check: 134.25 MB (Δ-8.63 MB)"}

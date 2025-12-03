@@ -1,0 +1,216 @@
+{
+  "rl4_version": "1.0.0",
+  "summary": "moon est un outil de gestion de monorepo écrit en Rust avec des packages npm associés. Le projet se concentre sur la stabilisation du core Rust (config, graph, diagnostics, code owners) tout en migrant progressivement la zone legacy vers proto/WASM. Les priorités actuelles incluent l'amélioration des diagnostics, la config partagée/code owners, l'optimisation 'affected projects' et la migration legacy. Les conventions strictes (tests verts obligatoires, formatage auto, semver strict, master compatible stable) et les zones critiques (config/graph, proto/WASM) nécessitent une gouvernance rigoureuse.",
+  "modules": [
+    {
+      "name": "moon_config",
+      "description": "Gestion de la configuration workspace/projet",
+      "path": "crates/config",
+      "responsibility": "Core config parsing, validation, schema",
+      "risks": [
+        "Zone critique - ne pas modifier sans validation explicite",
+        "Impact sur tous les workspaces utilisateurs"
+      ]
+    },
+    {
+      "name": "moon_task",
+      "description": "Système de tâches et exécution",
+      "path": "crates/task",
+      "responsibility": "Task definition, execution, lifecycle",
+      "risks": [
+        "Core orchestration - breaking changes interdits sur master"
+      ]
+    },
+    {
+      "name": "moon_action",
+      "description": "Pipeline d'actions et orchestration",
+      "path": "crates/action",
+      "responsibility": "Action graph, execution pipeline, parallelization",
+      "risks": [
+        "Core orchestration - breaking changes interdits sur master"
+      ]
+    },
+    {
+      "name": "moon_cache",
+      "description": "Système de cache et hashing",
+      "path": "crates/cache",
+      "responsibility": "Smart hashing, remote caching, build reproducibility",
+      "risks": [
+        "Performance critique - tests obligatoires"
+      ]
+    },
+    {
+      "name": "moon_graph",
+      "description": "Graphe de dépendances projet/task",
+      "path": "crates/graph",
+      "responsibility": "Project graph, dependency graph, incremental builds",
+      "risks": [
+        "Zone critique - ne pas modifier sans validation explicite",
+        "Impact sur performance et déterminisme"
+      ]
+    },
+    {
+      "name": "cli",
+      "description": "CLI binaire moon",
+      "path": "crates/cli",
+      "responsibility": "Entry point, command handling, user interaction",
+      "risks": [
+        "Interface utilisateur principale - UX critique"
+      ]
+    },
+    {
+      "name": "npm_packages",
+      "description": "Packages npm (@moonrepo/*)",
+      "path": "packages/*",
+      "responsibility": "JS/TS integrations, CLI npm, bindings",
+      "risks": [
+        "Support multi-runtime Node/TS"
+      ]
+    },
+    {
+      "name": "legacy_core",
+      "description": "Core legacy en migration",
+      "path": "legacy/core",
+      "responsibility": "Ancien core en phase de migration vers proto/WASM",
+      "risks": [
+        "Migration progressive - encore utilisée pour compatibilité",
+        "Suppression future planifiée"
+      ]
+    },
+    {
+      "name": "legacy_languages",
+      "description": "Supports langages legacy (bun, deno, node, rust, system)",
+      "path": "legacy/{bun,deno,javascript,node,rust,system}",
+      "responsibility": "Anciens backends outils, en migration vers proto/WASM",
+      "risks": [
+        "Migration progressive - compatibilité avec nouveaux crates proto/WASM requise"
+      ]
+    },
+    {
+      "name": "proto_wasm",
+      "description": "Composants proto/WASM (toolchain moderne)",
+      "path": "wasm/, proto-plugin.toml",
+      "responsibility": "Nouvelle architecture plugin/toolchain via WASM",
+      "risks": [
+        "Zone critique - ne pas modifier sans validation explicite",
+        "Remplacement progressif de legacy"
+      ]
+    },
+    {
+      "name": "website_docs",
+      "description": "Documentation et site web moonrepo.dev",
+      "path": "website/",
+      "responsibility": "Documentation utilisateur, guides, API reference",
+      "risks": [
+        "587 fichiers - source de vérité avec README/CONTRIBUTING"
+      ]
+    },
+    {
+      "name": "diagnostics_logging",
+      "description": "Diagnostics et logging (crates secondaires)",
+      "path": "crates/*/diagnostics, crates/*/logging",
+      "responsibility": "Introspection, debug, observabilité",
+      "risks": [
+        "En amélioration continue (backlog prioritaire)"
+      ]
+    }
+  ],
+  "domains": [
+    "core_rust",
+    "cli_binaries",
+    "npm_packages",
+    "legacy_migration",
+    "proto_wasm_toolchain",
+    "documentation",
+    "testing_infrastructure"
+  ],
+  "conventions": [
+    "Just pour build/test/lint Rust (just build, just test, just lint, just format)",
+    "yarn moon pour packages Node (yarn moon run :test, :lint, :typecheck)",
+    "Tests verts obligatoires avant PR",
+    "Formatage automatique Rust (rustfmt) et JS/TS (Prettier)",
+    "Semver strict avec yarn release workflow",
+    "master toujours compatible avec dernière release stable",
+    "Pas de breaking changes sur master sans version bump",
+    "Code coverage avec llvm-cov (just cov, just gen-html)",
+    "Branch master pour PRs (pas de feature branches long-lived)",
+    "Rust >= 1.61, Node >= v14.15 (engines: >=22.14.0)",
+    "Proto pour gestion versions Node/Yarn"
+  ],
+  "risks": [
+    "Zone legacy (135 fichiers) en migration progressive - risque de régression compatibilité",
+    "Crates moon_config et moon_graph sont critiques - modifications nécessitent validation explicite",
+    "Proto/WASM en transition - double maintenance legacy + nouveau système",
+    "806 fichiers source Rust - surface de code importante",
+    "TODO hotspots détectés dans website/docs (setup-workspace.mdx:11, proto/commands/versions.mdx:11, concepts/workspace.mdx:6)",
+    "Snapshot git unavailable - historique et diff non exploitables pour reconstruction",
+    "Multi-runtime (Node, TS, Rust, Go, Python) - compatibilité versions critique",
+    "Remote caching et build reproducibility - déterminisme à préserver absolument"
+  ],
+  "backlog": [
+    {
+      "title": "Amélioration diagnostics et introspection",
+      "description": "Renforcer les capacités de debug et observabilité du core",
+      "priority": "P1"
+    },
+    {
+      "title": "Config partagée et code owners",
+      "description": "Finaliser système de config partagée et gestion code ownership",
+      "priority": "P1"
+    },
+    {
+      "title": "Optimisation 'affected projects'",
+      "description": "Améliorer détection et performance des projets impactés par changements",
+      "priority": "P1"
+    },
+    {
+      "title": "Migration legacy vers proto/WASM",
+      "description": "Continuer migration progressive legacy/{bun,deno,node,rust,system} vers nouveaux crates proto/WASM",
+      "priority": "P2"
+    },
+    {
+      "title": "Résolution TODO hotspots documentation",
+      "description": "Traiter TODOs détectés dans website/docs (setup-workspace, proto/commands/versions, concepts/workspace)",
+      "priority": "P2"
+    },
+    {
+      "title": "Stabilisation toolchain/graph/caching",
+      "description": "Garantir stabilité et déterminisme des composants critiques (toolchain, project graph, smart hashing)",
+      "priority": "P0"
+    }
+  ],
+  "actions": [
+    "Générer Plan.RL4 avec phases migration legacy → proto/WASM",
+    "Créer Tasks.RL4 alignées sur backlog P0/P1/P2 ci-dessus",
+    "Définir ADRs.RL4 pour zones critiques (config, graph, proto/WASM non modifiables sans validation)",
+    "Établir Context.RL4 en mode strict pour stabilisation core Rust",
+    "Mapper dépendances entre crates critiques (config → task → action → graph → cache)",
+    "Documenter stratégie migration legacy (timeline, risques, rollback plan)",
+    "Établir gating criteria pour PRs touchant zones critiques"
+  ],
+  "constraints": [
+    "Ne jamais modifier moon_config ou moon_graph sans validation explicite",
+    "Ne jamais toucher composants proto/WASM sans analyse d'impact",
+    "Pas de breaking changes sur master (master == dernière stable + features compatibles)",
+    "Tests obligatoires verts avant tout merge",
+    "Compatibilité multi-runtime Node/TS/Rust/Go/Python obligatoire",
+    "Préserver déterminisme hashing et build reproducibility",
+    "Respecter versions min Rust >= 1.61, Node >= 22.14.0",
+    "Migration legacy progressive uniquement (pas de big bang)",
+    "Formatage automatique obligatoire (rustfmt + Prettier)",
+    "Semver strict avec yarn version workflow"
+  ],
+  "knowledge_base": [
+    "README.md",
+    "CONTRIBUTING.md",
+    "CHANGELOG.md",
+    "CHANGELOG_V0.md",
+    "CODE_OF_CONDUCT.md",
+    "moonrepo.dev (website/docs/**/*.mdx)",
+    "Cargo.toml workspace dependencies",
+    "package.json workspaces structure",
+    ".moon/workspace.yml",
+    "proto-plugin.toml",
+    "rust-toolchain.toml"
+  ]
+}

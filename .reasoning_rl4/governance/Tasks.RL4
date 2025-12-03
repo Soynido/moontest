@@ -1,0 +1,19 @@
+---
+version: 1.0.0
+updated: 2025-12-03T21:31:15.322Z
+bias: 0.0
+---
+
+# Tasks — Initial Reconstruction Backlog
+
+## Active
+- [ ] [P0] Stabilisation toolchain/graph/caching @rl4:id=first-use-backlog-6
+- [ ] [P1] Amélioration diagnostics et introspection @rl4:id=first-use-backlog-1
+- [ ] [P1] Config partagée et code owners @rl4:id=first-use-backlog-2
+- [ ] [P1] Optimisation 'affected projects' @rl4:id=first-use-backlog-3
+- [ ] [P2] Migration legacy vers proto/WASM @rl4:id=first-use-backlog-4
+- [ ] [P2] Résolution TODO hotspots documentation @rl4:id=first-use-backlog-5
+
+## Completed
+- [x] [P1] Test done-file linking @rl4:id=done-file-test
+  @rl4:files=rl4-test-sandbox/done-file.ts

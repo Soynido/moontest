@@ -1,0 +1,55 @@
+---
+version: 1.0.0
+updated: 2025-12-03T21:31:15.322Z
+mode: flexible
+first_use_lock: true
+ground_truth_established: true
+snapshot_reference: >-
+  /Users/valentingaludec/Downloads/moon-master/.reasoning_rl4/diagnostics/first-use-extended/raw-snapshot-1764796362058.json
+---
+
+# Context — Project Reconstruction
+
+## Raw Snapshot Metrics
+- Files scanned: 2574
+- Source files: 806
+- Total size: 96.7 MB
+- Truncated: no
+
+## Domain Overview
+- core_rust
+- cli_binaries
+- npm_packages
+- legacy_migration
+- proto_wasm_toolchain
+- documentation
+- testing_infrastructure
+
+## Documentation Detected
+- CHANGELOG.md
+- CHANGELOG_V0.md
+- CODE_OF_CONDUCT.md
+- CONTRIBUTING.md
+- README.md
+
+## Configuration Files
+- babel.config.js
+- depot.json
+- eslint.config.mjs
+- moon.yml
+- package.json
+
+## Constraints
+- Ne jamais modifier moon_config ou moon_graph sans validation explicite
+- Ne jamais toucher composants proto/WASM sans analyse d'impact
+- Pas de breaking changes sur master (master == dernière stable + features compatibles)
+- Tests obligatoires verts avant tout merge
+- Compatibilité multi-runtime Node/TS/Rust/Go/Python obligatoire
+- Préserver déterminisme hashing et build reproducibility
+- Respecter versions min Rust >= 1.61, Node >= 22.14.0
+- Migration legacy progressive uniquement (pas de big bang)
+- Formatage automatique obligatoire (rustfmt + Prettier)
+- Semver strict avec yarn version workflow
+
+## Reconstruction Notes
+moon est un outil de gestion de monorepo écrit en Rust avec des packages npm associés. Le projet se concentre sur la stabilisation du core Rust (config, graph, diagnostics, code owners) tout en migrant progressivement la zone legacy vers proto/WASM. Les priorités actuelles incluent l'amélioration des diagnostics, la config partagée/code owners, l'optimisation 'affected projects' et la migration legacy. Les conventions strictes (tests verts obligatoires, formatage auto, semver strict, master compatible stable) et les zones critiques (config/graph, proto/WASM) nécessitent une gouvernance rigoureuse.
