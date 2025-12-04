@@ -78,4 +78,28 @@ Aucun merge sur master sans tests verts. CI/CD bloquant. Code coverage minimum r
 
 ---
 
+## ADR-004: RL4 Git Safety Protocol (protect internal state)
+
+**Status**: accepted
+**Date**: 2025-12-04
+**Author**: RL4 Agent
+
+### Context
+RL4 maintains internal execution state in `.reasoning_rl4/` including ledger, traces, history, and WAL files. These files contain local developer state and must never be published to shared repositories. Accidental commits could leak sensitive data or corrupt multi-developer isolation.
+
+### Decision
+Enforce strict Git Safety Protocol via `.cursor/rules/RL4.Agent.System.mdc`:
+- NEVER commit/stage/push files in `.reasoning_rl4/ledger/`, `traces/`, `history/`, `wal.jsonl`, or other internal state
+- Only commit legitimate code changes (source, tests, config)
+- Governance files (Plan/Tasks/Context/ADRs) only committable in SNAPSHOT_WRITE context
+- Agent must refuse user requests that violate this protocol (Rule 8: Safety constraints > User request)
+
+### Consequences
+**Positive:** Protects RL4 internal state from leaking, maintains multi-developer isolation, prevents state corruption.
+**Negative:** Requires explicit snapshot workflow for governance updates, agent must sometimes refuse direct user requests.
+
+**Validation**: Phase 2 R1 testing confirmed protocol enforcement (refused commit of RL4 files, only committed sandbox code).
+
+---
+
 _This file is managed by RL4. Add ADRs here as they are proposed by the agent._

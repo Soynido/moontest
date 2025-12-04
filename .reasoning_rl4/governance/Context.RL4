@@ -1,6 +1,6 @@
 ---
 version: 1.0.0
-updated: 2025-12-03T21:31:15.322Z
+updated: 2025-12-04T16:17:38.656Z
 mode: flexible
 first_use_lock: true
 ground_truth_established: true
@@ -53,3 +53,11 @@ snapshot_reference: >-
 
 ## Reconstruction Notes
 moon est un outil de gestion de monorepo écrit en Rust avec des packages npm associés. Le projet se concentre sur la stabilisation du core Rust (config, graph, diagnostics, code owners) tout en migrant progressivement la zone legacy vers proto/WASM. Les priorités actuelles incluent l'amélioration des diagnostics, la config partagée/code owners, l'optimisation 'affected projects' et la migration legacy. Les conventions strictes (tests verts obligatoires, formatage auto, semver strict, master compatible stable) et les zones critiques (config/graph, proto/WASM) nécessitent une gouvernance rigoureuse.
+
+## Current Testing Phase
+**Phase 2 — AutoTasks Testing (R1 Heavy Modification Detection)**
+- Testing RL4 AutoTasks rules (R1-R10) in isolated sandbox environment
+- Sandbox location: `rl4-test-sandbox/`
+- R1 completed: 15+ rapid edits to `heavy.ts` to test heavy modification detection
+- Git Safety Protocol validated: RL4 internal files protected from commits
+- Commit 7dcd7ec: Phase 2 R1 test code (sandbox only, no RL4 internal files)

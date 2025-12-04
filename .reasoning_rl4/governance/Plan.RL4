@@ -1,7 +1,7 @@
 ---
 version: 1.0.0
-updated: 2025-12-03T21:31:15.322Z
-confidence: 0.6
+updated: 2025-12-04T16:17:38.656Z
+confidence: 0.82
 workspace_mode: existing
 ---
 
@@ -68,16 +68,42 @@ moon est un outil de gestion de monorepo écrit en Rust avec des packages npm as
 - Multi-runtime (Node, TS, Rust, Go, Python) - compatibilité versions critique
 - Remote caching et build reproducibility - déterminisme à préserver absolument
 
-## Current Priorities (Cycle #1)
+## Current Priorities (Cycle #1 Update)
 - P0: Stabilisation toolchain/graph/caching (criticité max - infrastructure core)
 - P1: Amélioration diagnostics et introspection
+- P1: Improve logging across all Rust crates (NEW - observability)
 - P1: Config partagée et code owners
 - P1: Optimisation 'affected projects'
+- P1: Développer tests E2E (NEW - quality assurance)
 - P2: Migration legacy vers proto/WASM (progressive)
 - P2: Résolution TODO hotspots documentation
 
+## Progress Since Last Snapshot (Cycle #1/27)
+- System maturity: 27 total cycles completed, system stable and operational
+- **Performance stable**: Cycle time 1529715ms (~25 min avg), holding steady
+- Memory usage: 150MB (down from 211MB, -61MB decrease, positive trend)
+- **Phase 2 AutoTasks Testing**: R1 Heavy Modification Detection completed
+  - Created rl4-test-sandbox/ for isolated testing
+  - Executed 15+ rapid edits on heavy.ts to trigger heavy modification detection
+  - Validated RL4 Git Safety Protocol (refused commits of internal files)
+  - Clean commit 7dcd7ec (sandbox code only, RL4 files protected)
+- File activity: 10 changes total (rl4-test-sandbox modifications)
+- Task prioritization: Complete (all tasks have explicit priorities)
+- Off-plan work: 2 tasks detected (Rust Work in .cursor/rules and root)
+- Terminal capture: Stable (2 sessions recorded)
+- Timeline events: 31 total (new test-related events)
+
+## Current Blockers
+- Codec payload exceeds budget (timeline codec in fallback mode, stable)
+- Slow cycles: avg 1529715ms (~25 min per cycle, stable but above baseline)
+- No test execution baseline established
+- 2 off-plan tasks awaiting promotion/dismissal (Rust Work in .cursor/rules and root)
+
 ## Next Human Actions
-1. Prioriser les tâches P1 selon les dépendances techniques
-2. Valider la stratégie de migration legacy (timeline, risques)
-3. Définir les ADRs pour zones critiques (config, graph, proto/WASM)
-4. Établir les métriques de réussite pour la stabilisation P0
+1. **Continue Phase 2 AutoTasks Testing**: Execute rules R2-R10 (R1 completed successfully)
+2. Review and promote/dismiss 2 off-plan tasks: Rust Work in .cursor/rules and root folder
+3. Monitor cycle performance (stable at 25 min, targeting sub-20 min)
+4. Validate AutoTasks detection in RL4 UI after R1-R10 tests complete
+5. Begin P0 work after testing phase: Stabilisation toolchain/graph/caching
+6. Define success metrics for P1 objectives (logging improvement, E2E tests)
+7. Establish test execution baseline
