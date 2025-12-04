@@ -37,6 +37,10 @@ export class DoneFileTest {
       timestamp: this.config.timestamp || new Date(),
     };
   }
+
+  public isValid(): boolean {
+    return this.config.enabled && this.config.version > 0;
+  }
 }
 
 // Example usage
