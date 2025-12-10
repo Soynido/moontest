@@ -1,23 +1,23 @@
 {
-  "generated_at": "2025-12-03T22:21:27.916Z",
-  "duration_ms": 1,
-  "approx_bytes": 6948,
+  "generated_at": "2025-12-05T11:32:26.354Z",
+  "duration_ms": 4,
+  "approx_bytes": 33676,
   "codec_status": "fallback",
   "codec_reason": "codec_payload_exceeds_budget",
   "stats": {
-    "fileChanges": 4,
-    "gitCommits": 0,
-    "terminalEvents": 0,
+    "fileChanges": 14,
+    "gitCommits": 5,
+    "terminalEvents": 2,
     "ideActivity": 0,
     "buildMetrics": 0
   },
   "prompt_metrics": {
-    "prompt_chars_original": 6514,
-    "prompt_chars_optimized": 6514,
+    "prompt_chars_original": 7412,
+    "prompt_chars_optimized": 7412,
     "compression_ratio": 1,
     "format_time_ms": 0,
     "optimize_time_ms": 0,
-    "total_time_ms": 1
+    "total_time_ms": 6
   },
-  "ledger_cycles": 6
+  "ledger_cycles": 30
 }

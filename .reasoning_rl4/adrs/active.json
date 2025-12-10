@@ -1,0 +1,24 @@
+{
+  "generated_at": "2025-12-10T10:31:29.521Z",
+  "total": 2,
+  "accepted": [],
+  "pending": [
+    {
+      "id": "adr-proposed-1765131642437-vyedo",
+      "title": "Harden rl4-test-sandbox/canonicalize-test.ts path",
+      "status": "proposed",
+      "confidence": 0.62,
+      "createdAt": "2025-12-07T18:20:42.437Z",
+      "modifiedAt": "2025-12-07T18:20:42.437Z"
+    },
+    {
+      "id": "adr-proposed-1765131597399-808zp",
+      "title": "Harden rl4-test-sandbox/canonicalize-test.ts path",
+      "status": "proposed",
+      "confidence": 0.62,
+      "createdAt": "2025-12-07T18:19:57.399Z",
+      "modifiedAt": "2025-12-07T18:19:57.399Z"
+    }
+  ],
+  "rejected": []
+}

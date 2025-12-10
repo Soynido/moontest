@@ -1,0 +1,18 @@
+[
+  {
+    "forecast_id": "fc-1765131642436-ah9qgg15w",
+    "predicted_decision": "Address accumulated technical debt",
+    "decision_type": "Refactor",
+    "rationale": [
+      "Pattern: Stabilize rl4-test-sandbox/canonicalize-test.ts flow",
+      "Correlation: emerging (score: 0.19)"
+    ],
+    "confidence": 0.65,
+    "suggested_timeframe": "H2 2026",
+    "related_patterns": [
+      "fallback-pattern-1"
+    ],
+    "urgency": "low",
+    "estimated_effort": "high"
+  }
+]

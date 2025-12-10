@@ -1,0 +1,27 @@
+# ADRs — Architecture Decision Records
+
+## Format
+
+Each ADR follows this structure:
+
+```markdown
+## ADR-XXX: [Title]
+
+**Status**: proposed | accepted | rejected | deprecated | superseded
+**Date**: YYYY-MM-DD
+**Author**: [Author name]
+
+### Context
+[Describe the context and problem]
+
+### Decision
+[Describe the decision made]
+
+### Consequences
+**Positive:** [List positive consequences]
+**Negative:** [List negative consequences]
+```
+
+---
+
+_This file is managed by RL4. Add ADRs here as they are proposed by the agent._

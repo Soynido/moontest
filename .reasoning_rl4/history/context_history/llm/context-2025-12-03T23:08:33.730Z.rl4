@@ -1,0 +1,197 @@
+---
+timestamp: 2025-12-03T23:08:33.730Z
+cycle: 1
+mode: flexible
+phase: "Stabilisation du core Rust (config, graph, diagnostics)"
+---
+
+# Context Snapshot — Cycle #1 (Update)
+
+## Project State
+
+**Project**: moon (Rust-based monorepo management tool)
+**Workspace**: /Users/valentingaludec/Downloads/moon-master
+**Mode**: flexible
+**Confidence**: 0.65 (+0.05 from last snapshot)
+**First-use lock**: true
+**Cycle**: #1 (9 total cycles recorded)
+
+## Phase
+
+moon est un outil de gestion de monorepo écrit en Rust avec des packages npm associés. Le projet se concentre sur la stabilisation du core Rust (config, graph, diagnostics, code owners) tout en migrant progressivement la zone legacy vers proto/WASM. Les priorités actuelles incluent l'amélioration des diagnostics, la config partagée/code owners, l'optimisation 'affected projects' et la migration legacy. Les conventions strictes (tests verts obligatoires, formatage auto, semver strict, master compatible stable) et les zones critiques (config/graph, proto/WASM) nécessitent une gouvernance rigoureuse.
+
+## Active Context
+
+### Current Focus
+- P0: Stabilisation toolchain/graph/caching (not yet started)
+- P1: Amélioration diagnostics et introspection
+- P1: Config partagée et code owners
+- P1: Optimisation 'affected projects'
+- P2: Migration legacy vers proto/WASM (progressive)
+- P2: Résolution TODO hotspots documentation
+
+### Progress This Cycle
+- ✅ Completed: [P1] Test done-file linking
+  - Created: rl4-test-sandbox/done-file.ts
+  - Validated: @rl4:files= annotation linking
+  - Edits: 5 refactoring iterations
+- Git repository initialized with initial commit
+- 5 total file changes (testing and config)
+
+### Constraints Active
+- Ne jamais modifier moon_config ou moon_graph sans validation explicite
+- Ne jamais toucher composants proto/WASM sans analyse d'impact
+- Pas de breaking changes sur master
+- Tests obligatoires verts avant tout merge
+- Compatibilité multi-runtime Node/TS/Rust/Go/Python obligatoire
+- Préserver déterminisme hashing et build reproducibility
+- Respecter versions min Rust >= 1.61, Node >= 22.14.0
+- Migration legacy progressive uniquement (pas de big bang)
+- Formatage automatique obligatoire (rustfmt + Prettier)
+- Semver strict avec yarn version workflow
+
+## Observations
+
+### Files (Recent Changes)
+- rl4-test-sandbox/heavy.ts (2 changes - refactor)
+- rl4-test-sandbox/done-file.ts (2 changes - refactor, test file linking)
+- package.json (1 change - config)
+- Total tracked: 5 file changes
+
+### Git Activity
+- Repository initialized
+- Initial commit created
+- Note: Git tracking shows 0 commits in snapshot (tracking issue)
+
+### Terminal Activity
+- Commands executed (echo, ls, node -v, git init/add/commit)
+- Terminal session capture: not yet operational (0 events tracked)
+
+### Tests
+- No test execution detected (diagnostics/tests/latest.json missing)
+- Test baseline not yet established
+
+### Activity Intelligence
+- File changes: 5
+- Git commits: 0 (tracking issue)
+- Terminal events: 0 (capture not operational)
+- IDE activity: 0
+- Build metrics: 0
+
+## Health Metrics
+
+- Memory: 152MB (healthy, down from 157MB)
+- Event loop lag: 0ms (excellent)
+- CPU load: 0.00 (idle)
+- Cycle duration avg: 871833ms (~14.5 min) ⚠️ DEGRADED
+  - Previous: 568161ms (~9.5 min)
+  - Degradation: +53% slower
+
+## Anomalies & Blockers
+
+### Critical
+- ⚠️ Codec payload exceeds budget
+  - Timeline codec in FALLBACK mode
+  - Limits historical analysis capability
+  - Action: Optimize codec or prune old events
+
+### High Priority
+- ⚠️ Slow cycles: avg 871833ms (~14.5 min)
+  - Significant performance degradation (+53%)
+  - Action: Investigate root cause immediately
+
+### Medium Priority
+- Terminal session capture not operational
+- Git tracking not recording commits properly
+- No test execution baseline
+
+## Off-Plan Work
+
+### Detected (1)
+- "Rust Config — package.json"
+  - Type: config
+  - Priority: MEDIUM
+  - Files: [package.json]
+  - Status: Awaiting human review (promote or dismiss)
+
+## Critical Zones (Protected by ADRs)
+
+### moon_config
+- Gestion de la configuration workspace/projet
+- **Status**: Protected (ADR-001)
+- **Modification**: Requires explicit validation + impact analysis
+
+### moon_graph
+- Graphe de dépendances projet/task
+- **Status**: Protected (ADR-001)
+- **Modification**: Requires explicit validation + impact analysis
+
+### proto/WASM
+- Toolchain en transition
+- **Status**: Protected (ADR-001)
+- **Modification**: Requires explicit validation + impact analysis
+
+### legacy (135 files)
+- Core legacy en migration progressive
+- **Status**: Progressive migration only (ADR-002)
+- **Strategy**: Incremental, compatibility maintained 2+ major releases
+
+## Domains Active
+
+1. **core_rust** (primary focus)
+   - Status: P0 work pending
+   - Next: Stabilisation toolchain/graph/caching
+
+2. **cli_binaries**
+   - Status: Stable
+   
+3. **npm_packages**
+   - Status: Active (package.json modified)
+   
+4. **legacy_migration** (P2, progressive)
+   - Status: Planned, not yet started
+   
+5. **proto_wasm_toolchain**
+   - Status: Protected, no changes
+   
+6. **documentation** (P2, TODO hotspots)
+   - Status: Identified, not yet addressed
+   
+7. **testing_infrastructure** 
+   - Status: Needs baseline establishment
+
+## Tasks Status
+
+### Active (6)
+- [ ] [P0] Stabilisation toolchain/graph/caching @rl4:id=first-use-backlog-6
+- [ ] [P1] Amélioration diagnostics et introspection @rl4:id=first-use-backlog-1
+- [ ] [P1] Config partagée et code owners @rl4:id=first-use-backlog-2
+- [ ] [P1] Optimisation 'affected projects' @rl4:id=first-use-backlog-3
+- [ ] [P2] Migration legacy vers proto/WASM @rl4:id=first-use-backlog-4
+- [ ] [P2] Résolution TODO hotspots documentation @rl4:id=first-use-backlog-5
+
+### Completed (1)
+- [x] [P1] Test done-file linking @rl4:id=done-file-test
+  - File: rl4-test-sandbox/done-file.ts
+  - Validated @rl4:files= annotation
+
+## Next Actions Expected
+
+### Immediate (Human)
+1. Investigate cycle performance degradation (14.5 min avg)
+2. Review and promote/dismiss off-plan task: "Rust Config — package.json"
+3. Establish test execution baseline
+4. Begin P0 work: Stabilisation toolchain/graph/caching
+
+### Short-term (Agent)
+1. Monitor cycle performance
+2. Assist with test baseline setup
+3. Support P0 implementation when human is ready
+4. Track and report on performance improvements
+
+### System
+1. Fix terminal session capture
+2. Fix git commit tracking
+3. Optimize codec for larger payloads
+4. Establish test diagnostics pipeline
+

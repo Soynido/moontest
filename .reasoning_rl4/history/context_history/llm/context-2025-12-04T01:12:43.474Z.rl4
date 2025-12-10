@@ -1,0 +1,255 @@
+---
+timestamp: 2025-12-04T01:12:43.474Z
+cycle: 1
+mode: flexible
+phase: "Stabilisation du core Rust + observability & quality"
+---
+
+# Context Snapshot — Cycle #1 (Major Update)
+
+## Project State
+
+**Project**: moon (Rust-based monorepo management tool)
+**Workspace**: /Users/valentingaludec/Downloads/moon-master
+**Mode**: flexible
+**Confidence**: 0.7 (+0.1 from last snapshot)
+**First-use lock**: true
+**Cycle**: #1 (5 total cycles recorded)
+
+## Phase Evolution
+
+moon est un outil de gestion de monorepo écrit en Rust avec des packages npm associés. Le projet se concentre sur la stabilisation du core Rust (config, graph, diagnostics, code owners) tout en migrant progressivement la zone legacy vers proto/WASM.
+
+**New Focus Areas (added this cycle):**
+- Observability: Improve logging across all Rust crates
+- Quality assurance: Développer tests E2E
+
+Les priorités actuelles incluent l'amélioration des diagnostics, la config partagée/code owners, l'optimisation 'affected projects' et la migration legacy. Les conventions strictes (tests verts obligatoires, formatage auto, semver strict, master compatible stable) et les zones critiques (config/graph, proto/WASM) nécessitent une gouvernance rigoureuse.
+
+## Active Context
+
+### Current Focus (Expanded)
+- P0: Stabilisation toolchain/graph/caching (not yet started)
+- P1: Amélioration diagnostics et introspection
+- P1: **Improve logging across all Rust crates** (NEW)
+- P1: Config partagée et code owners
+- P1: Optimisation 'affected projects'
+- P1: **Développer tests E2E** (NEW)
+- P2: Migration legacy vers proto/WASM (progressive)
+- P2: Résolution TODO hotspots documentation
+
+### Progress This Cycle
+- ✅ Completed: [P1] Test done-file linking
+  - File: rl4-test-sandbox/done-file.ts
+  - Validated: @rl4:files= annotation linking
+- ✅ Terminal capture: Now operational (2 sessions recorded)
+- ✅ Terminal events file: Created and populated
+- ✅ File tracking: 8 changes detected across test sandbox
+- ⚠️ Off-plan work: 3 tasks detected (heavy.ts, done-file.ts, utils.ts)
+- ⚠️ Local tasks: 3 pending promotion (Modif fichier XXLLL, Test RL555, Test promote RL4)
+
+### Constraints Active
+- Ne jamais modifier moon_config ou moon_graph sans validation explicite
+- Ne jamais toucher composants proto/WASM sans analyse d'impact
+- Pas de breaking changes sur master
+- Tests obligatoires verts avant tout merge
+- Compatibilité multi-runtime Node/TS/Rust/Go/Python obligatoire
+- Préserver déterminisme hashing et build reproducibility
+- Respecter versions min Rust >= 1.61, Node >= 22.14.0
+- Migration legacy progressive uniquement (pas de big bang)
+- Formatage automatique obligatoire (rustfmt + Prettier)
+- Semver strict avec yarn version workflow
+
+## Observations
+
+### Files (Recent Changes)
+- rl4-test-sandbox/done-file.ts (3 changes - refactor, test validation)
+- rl4-test-sandbox/heavy.ts (2 changes - refactor)
+- rl4-test-sandbox/utils.ts (3 changes - refactor, new file)
+- package.json (1 change - config)
+- rl4-test-sandbox/orphan-zone/my-orphan.ts (1 change - config)
+- Total tracked: 8 file changes
+
+### Git Activity
+- Repository initialized previously
+- Commits recorded: 0 (no new commits this cycle)
+- Note: Git tracking operational but no commits made
+
+### Terminal Activity (NEW - Now Operational!)
+- ✅ Terminal capture working
+- 2 sessions recorded:
+  - Session 1: "echo test terminal capture in moon workspace"
+  - Session 2: Generic terminal activity
+- Terminal events file: `.reasoning_rl4/terminal-events.jsonl` created
+
+### Tests
+- No test execution detected (diagnostics/tests/latest.json missing)
+- Test baseline not yet established
+- E2E test development now prioritized (new P1 task)
+
+### Activity Intelligence
+- File changes: 8
+- Git commits: 0
+- Terminal events: 2 ✅
+- IDE activity: 0
+- Build metrics: 0
+- Terminal signal: "terminal • no pattern detected"
+
+## Health Metrics
+
+- Memory: 159MB (healthy, +7MB from previous)
+- Event loop lag: 0ms (excellent)
+- CPU load: 0.00 (idle)
+- Cycle duration avg: **3606101ms (~60 min)** ⚠️ **CRITICAL**
+  - Previous: 871833ms (~14.5 min)
+  - Degradation: **+313% slower (4.1x)**
+  - **This is a critical blocker**
+
+## Anomalies & Blockers
+
+### CRITICAL BLOCKER
+- ⚠️ **Extreme cycle slowdown: avg 60 min per cycle**
+  - Was 14.5 min, now 60 min (+313% degradation)
+  - Root cause unknown (investigation required)
+  - Impact: Severely degrades developer experience
+  - Possible causes:
+    - Ledger/WAL file growth
+    - Timeline event processing overhead (24 events)
+    - Codec payload processing
+    - Memory/resource constraints
+
+### High Priority
+- ⚠️ Codec payload exceeds budget
+  - Timeline codec in FALLBACK mode
+  - Limited historical analysis capability
+  - Action: Optimize or prune events
+
+### Medium Priority
+- 3 off-plan tasks awaiting review (heavy.ts, done-file.ts, utils.ts)
+- 3 local tasks pending promotion/dismissal
+- No test execution baseline
+- Git commits not being created (0 commits despite activity)
+
+### Positive Developments
+- ✅ Terminal capture now operational
+- ✅ File tracking working correctly
+- ✅ Confidence increased (0.6 → 0.7)
+- ✅ New objectives defined (logging, E2E tests)
+
+## Off-Plan & Local Work
+
+### Off-Plan Tasks (3)
+1. Rust Work — rl4-test-sandbox/heavy.ts
+   - Type: UNKNOWN
+   - Priority: MEDIUM
+   - Status: Awaiting promotion/dismissal
+
+2. Rust Work — rl4-test-sandbox/done-file.ts
+   - Type: UNKNOWN
+   - Priority: MEDIUM
+   - Status: Awaiting promotion/dismissal
+
+3. Rust Work — rl4-test-sandbox/utils.ts
+   - Type: UNKNOWN
+   - Priority: MEDIUM
+   - Status: Awaiting promotion/dismissal
+
+### Local Tasks (3)
+1. "Modif fichier XXLLL" (2025-12-04T00:32:20.197Z)
+2. "Test RL555" (2025-12-04T00:32:27.031Z)
+3. "Test promote RL4" (2025-12-04T00:39:07.696Z)
+
+All awaiting reconciliation with RL4 governance.
+
+## Critical Zones (Protected by ADRs)
+
+### moon_config
+- Gestion de la configuration workspace/projet
+- **Status**: Protected (ADR-001)
+- **Modification**: Requires explicit validation + impact analysis
+
+### moon_graph
+- Graphe de dépendances projet/task
+- **Status**: Protected (ADR-001)
+- **Modification**: Requires explicit validation + impact analysis
+
+### proto/WASM
+- Toolchain en transition
+- **Status**: Protected (ADR-001)
+- **Modification**: Requires explicit validation + impact analysis
+
+### legacy (135 files)
+- Core legacy en migration progressive
+- **Status**: Progressive migration only (ADR-002)
+- **Strategy**: Incremental, compatibility maintained 2+ major releases
+
+## Domains Active
+
+1. **core_rust** (primary focus + new logging objective)
+   - Status: P0 work pending
+   - Next: Stabilisation toolchain/graph/caching
+   - New: Improve logging across all crates
+
+2. **cli_binaries**
+   - Status: Stable
+
+3. **npm_packages**
+   - Status: Active (package.json modified)
+
+4. **legacy_migration** (P2, progressive)
+   - Status: Planned, not yet started
+
+5. **proto_wasm_toolchain**
+   - Status: Protected, no changes
+
+6. **documentation** (P2, TODO hotspots)
+   - Status: Identified, not yet addressed
+
+7. **testing_infrastructure** (new focus)
+   - Status: Needs baseline + E2E development
+   - New P1 task: Développer tests E2E
+
+## Tasks Status
+
+### Active (8)
+- [ ] [P0] Stabilisation toolchain/graph/caching @rl4:id=first-use-backlog-6
+- [ ] [P1] Amélioration diagnostics et introspection @rl4:id=first-use-backlog-1
+- [ ] [P1] Improve logging across all Rust crates @rl4:id=improve-logging-rust ✨ NEW
+- [ ] [P1] Config partagée et code owners @rl4:id=first-use-backlog-2
+- [ ] [P1] Optimisation 'affected projects' @rl4:id=first-use-backlog-3
+- [ ] [P1] Développer tests E2E @rl4:id=develop-e2e-tests ✨ NEW
+- [ ] [P2] Migration legacy vers proto/WASM @rl4:id=first-use-backlog-4
+- [ ] [P2] Résolution TODO hotspots documentation @rl4:id=first-use-backlog-5
+
+### Completed (1)
+- [x] [P1] Test done-file linking @rl4:id=done-file-test
+  - File: rl4-test-sandbox/done-file.ts
+  - Validated @rl4:files= annotation
+
+## Next Actions Expected
+
+### IMMEDIATE (CRITICAL)
+1. **Human**: Investigate 60-min cycle performance crisis
+   - Check ledger/WAL sizes
+   - Profile kernel performance
+   - Consider pruning old events
+   - **This blocks everything else**
+
+### HIGH PRIORITY (Human)
+2. Review and promote/dismiss 3 off-plan tasks
+3. Reconcile 3 local tasks with governance
+4. Define success metrics for new P1 tasks:
+   - Logging: coverage, format, metrics
+   - E2E tests: scope, targets, CI integration
+
+### NORMAL (Agent Support)
+1. Begin P0 work when blockers resolved
+2. Establish test baseline
+3. Monitor cycle performance
+4. Support task implementation
+
+### SYSTEM
+1. Fix cycle performance
+2. Optimize codec payload processing
+3. Implement performance monitoring/alerts
+

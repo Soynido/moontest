@@ -1,0 +1,37 @@
+[
+  {
+    "forecast_id": "fallback-forecast-1",
+    "predicted_decision": "Harden rl4-test-sandbox/canonicalize-test.ts path",
+    "decision_type": "ADR_Proposal",
+    "rationale": [
+      "Recent file focus: rl4-test-sandbox/canonicalize-test.ts",
+      "Recent commit activity indicates kernel churn",
+      "Terminal command \"command_end\" ran this cycle"
+    ],
+    "confidence": 0.62,
+    "suggested_timeframe": "Next Sprint",
+    "related_patterns": [
+      "fallback-pattern-1"
+    ],
+    "urgency": "high",
+    "estimated_effort": "medium",
+    "cycle_id": 2
+  },
+  {
+    "forecast_id": "fc-1765131597398-u55wvvd3x",
+    "predicted_decision": "Address accumulated technical debt",
+    "decision_type": "Refactor",
+    "rationale": [
+      "Pattern: Stabilize rl4-test-sandbox/canonicalize-test.ts flow",
+      "Correlation: emerging (score: 0.42)"
+    ],
+    "confidence": 0.65,
+    "suggested_timeframe": "H2 2026",
+    "related_patterns": [
+      "fallback-pattern-1"
+    ],
+    "urgency": "low",
+    "estimated_effort": "high",
+    "cycle_id": 2
+  }
+]

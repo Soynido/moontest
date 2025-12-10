@@ -1,0 +1,118 @@
+{
+  "patterns_count": 1,
+  "events_count": 19,
+  "patterns_sample": [
+    {
+      "id": "fallback-pattern-1",
+      "pattern": "Stabilize rl4-test-sandbox/canonicalize-test.ts flow",
+      "frequency": 30,
+      "confidence": 0.5,
+      "impact": "Technical_Debt",
+      "category": "structural",
+      "tags": [
+        "rl4-test-sandbox/canonicalize-test.ts",
+        "flexible",
+        "fallback"
+      ],
+      "firstSeen": "2025-12-07T18:19:18.893Z",
+      "lastSeen": "2025-12-07T18:19:18.893Z",
+      "evidenceIds": [
+        "file:rl4-test-sandbox/canonicalize-test.ts",
+        "cmd:command_end"
+      ],
+      "recommendation": "Continue consolidating work on rl4-test-sandbox/canonicalize-test.ts while mode flexible is active."
+    }
+  ],
+  "events_sample": [
+    {
+      "entry_id": "3b7eeae2-ea9b-4dab-ad56-c75236aee1b9",
+      "type": "git_commit",
+      "target_id": "3b7eeae2-ea9b-4dab-ad56-c75236aee1b9",
+      "timestamp": "2025-12-04T15:15:39.512Z",
+      "data": {
+        "commit": {
+          "message": "",
+          "files_changed": []
+        },
+        "intent": {
+          "type": "commit",
+          "keywords": []
+        },
+        "tags": [],
+        "impact": "neutral"
+      }
+    },
+    {
+      "entry_id": "ad02dd58-1a41-4667-a706-24c9b937a988",
+      "type": "git_commit",
+      "target_id": "ad02dd58-1a41-4667-a706-24c9b937a988",
+      "timestamp": "2025-12-04T15:18:05.891Z",
+      "data": {
+        "commit": {
+          "message": "",
+          "files_changed": []
+        },
+        "intent": {
+          "type": "commit",
+          "keywords": []
+        },
+        "tags": [],
+        "impact": "neutral"
+      }
+    },
+    {
+      "entry_id": "4edcd7a9-1f33-43fa-bf20-53d560c41aaa",
+      "type": "git_commit",
+      "target_id": "4edcd7a9-1f33-43fa-bf20-53d560c41aaa",
+      "timestamp": "2025-12-04T16:04:20.544Z",
+      "data": {
+        "commit": {
+          "message": "",
+          "files_changed": []
+        },
+        "intent": {
+          "type": "commit",
+          "keywords": []
+        },
+        "tags": [],
+        "impact": "neutral"
+      }
+    },
+    {
+      "entry_id": "1b533398-8ed4-4bb7-bb5c-11a61542a180",
+      "type": "git_commit",
+      "target_id": "1b533398-8ed4-4bb7-bb5c-11a61542a180",
+      "timestamp": "2025-12-04T16:36:41.298Z",
+      "data": {
+        "commit": {
+          "message": "",
+          "files_changed": []
+        },
+        "intent": {
+          "type": "commit",
+          "keywords": []
+        },
+        "tags": [],
+        "impact": "neutral"
+      }
+    },
+    {
+      "entry_id": "3b7831fa-05e2-4485-8973-2c01f121a64d",
+      "type": "git_commit",
+      "target_id": "3b7831fa-05e2-4485-8973-2c01f121a64d",
+      "timestamp": "2025-12-04T16:53:37.550Z",
+      "data": {
+        "commit": {
+          "message": "",
+          "files_changed": []
+        },
+        "intent": {
+          "type": "commit",
+          "keywords": []
+        },
+        "tags": [],
+        "impact": "neutral"
+      }
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 ---
 version: 1.0.0
-updated: 2025-12-04T16:17:38.656Z
-confidence: 0.82
+updated: 2025-12-07T18:18:47.548Z
+confidence: 0.50
 workspace_mode: existing
 ---
 
@@ -78,32 +78,28 @@ moon est un outil de gestion de monorepo écrit en Rust avec des packages npm as
 - P2: Migration legacy vers proto/WASM (progressive)
 - P2: Résolution TODO hotspots documentation
 
-## Progress Since Last Snapshot (Cycle #1/27)
-- System maturity: 27 total cycles completed, system stable and operational
-- **Performance stable**: Cycle time 1529715ms (~25 min avg), holding steady
-- Memory usage: 150MB (down from 211MB, -61MB decrease, positive trend)
-- **Phase 2 AutoTasks Testing**: R1 Heavy Modification Detection completed
-  - Created rl4-test-sandbox/ for isolated testing
-  - Executed 15+ rapid edits on heavy.ts to trigger heavy modification detection
-  - Validated RL4 Git Safety Protocol (refused commits of internal files)
-  - Clean commit 7dcd7ec (sandbox code only, RL4 files protected)
-- File activity: 10 changes total (rl4-test-sandbox modifications)
+## Progress Since Last Snapshot (Cycle #8)
+- System maturity: Kernel cycle #8, system stable and operational
+- **Phase 2 AutoTasks Testing**: Continued progress
+  - R1 Heavy Modification Detection: Completed (15+ rapid edits on heavy.ts)
+  - Canonicalization test: Added canonicalize-test.ts with 7 standardization edits
+  - Commits: 7dcd7ec (R1), 56c3989 (Snapshot #1), 5049046 (canonicalization)
+  - Git Safety Protocol: Consistently enforced (RL4 internal files protected)
+- File activity: rl4-test-sandbox/ test files (heavy.ts, canonicalize-test.ts, done-file.ts, utils.ts)
 - Task prioritization: Complete (all tasks have explicit priorities)
-- Off-plan work: 2 tasks detected (Rust Work in .cursor/rules and root)
-- Terminal capture: Stable (2 sessions recorded)
-- Timeline events: 31 total (new test-related events)
+- Uncommitted files: 51 (RL4 internal state files, protected from commits)
+- Testing status: R1 and canonicalization tests completed, R2-R10 pending
 
 ## Current Blockers
-- Codec payload exceeds budget (timeline codec in fallback mode, stable)
-- Slow cycles: avg 1529715ms (~25 min per cycle, stable but above baseline)
-- No test execution baseline established
-- 2 off-plan tasks awaiting promotion/dismissal (Rust Work in .cursor/rules and root)
+- Confidence level: 50% (below target, snapshot indicates initial setup phase mismatch)
+- Uncommitted files: 51 (RL4 internal state, expected and protected)
+- Phase 2 AutoTasks Testing: R2-R10 rules pending execution
+- No test execution baseline established for moon project
 
 ## Next Human Actions
-1. **Continue Phase 2 AutoTasks Testing**: Execute rules R2-R10 (R1 completed successfully)
-2. Review and promote/dismiss 2 off-plan tasks: Rust Work in .cursor/rules and root folder
-3. Monitor cycle performance (stable at 25 min, targeting sub-20 min)
-4. Validate AutoTasks detection in RL4 UI after R1-R10 tests complete
-5. Begin P0 work after testing phase: Stabilisation toolchain/graph/caching
-6. Define success metrics for P1 objectives (logging improvement, E2E tests)
-7. Establish test execution baseline
+1. **Continue Phase 2 AutoTasks Testing**: Execute rules R2-R10 (R1 and canonicalization completed)
+2. Validate AutoTasks detection in RL4 UI for completed tests (R1 heavy modification, canonicalization)
+3. Review snapshot confidence discrepancy (50% vs expected higher after First Use Extended completion)
+4. Begin P0 work after testing phase: Stabilisation toolchain/graph/caching
+5. Define success metrics for P1 objectives (logging improvement, E2E tests)
+6. Establish test execution baseline for moon project

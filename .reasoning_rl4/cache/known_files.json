@@ -2001,6 +2001,7 @@
     "website/blog/img/proto/v0.52.png",
     "website/blog/img/proto/v0.53.png",
     "rl4-test-sandbox/heavy.ts",
-    "rl4-test-sandbox/done-file.ts"
+    "rl4-test-sandbox/done-file.ts",
+    "rl4-test-sandbox/utils.ts"
   ]
 }

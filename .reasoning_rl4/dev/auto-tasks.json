@@ -1,53 +1,6 @@
 {
   "version": 2,
-  "tasks": [
-    {
-      "id": "568d9143-3475-40a7-bbf9-c3daa0b9ddb5",
-      "title": "Rust Work — rl4-test-sandbox/heavy.ts",
-      "source": "promote_engine",
-      "detail": "1 artifact around rl4-test-sandbox/heavy.ts",
-      "confidence": "MEDIUM",
-      "detectedAt": "2025-12-03T21:34:10.654Z",
-      "status": "pending",
-      "fingerprint": "6f7c1b80d2e643d9780965d107b326af",
-      "clusterId": "6f7c1b80d2e643d9780965d107b326af",
-      "projectType": "Rust",
-      "category": "unknown",
-      "files": [
-        "rl4-test-sandbox/heavy.ts"
-      ],
-      "reasons": [
-        "+1 / -0 edits",
-        "Extension .ts",
-        "+0 / -0 edits",
-        "Activity in uncovered area"
-      ],
-      "artifactCount": 1
-    },
-    {
-      "id": "701fce5e-49a5-4d5c-82b7-726c78a86ded",
-      "title": "Rust Work — rl4-test-sandbox/done-file.ts",
-      "source": "promote_engine",
-      "detail": "1 artifact around rl4-test-sandbox/done-file.ts",
-      "confidence": "MEDIUM",
-      "detectedAt": "2025-12-03T21:56:46.997Z",
-      "status": "pending",
-      "fingerprint": "b0064c3fd78dce307c1cdd6063d73756",
-      "clusterId": "b0064c3fd78dce307c1cdd6063d73756",
-      "projectType": "Rust",
-      "category": "unknown",
-      "files": [
-        "rl4-test-sandbox/done-file.ts"
-      ],
-      "reasons": [
-        "+1 / -0 edits",
-        "Extension .ts",
-        "+0 / -0 edits",
-        "Activity in uncovered area"
-      ],
-      "artifactCount": 1
-    }
-  ],
+  "tasks": [],
   "filters": {
     "lookbackMinutes": 240,
     "includeTests": false,
@@ -55,13 +8,14 @@
     "includeAssets": false
   },
   "diagnostics": {
-    "captured": 2,
+    "captured": 0,
     "ignored": {
       "tests": 0,
       "assets": 0,
       "generated": 0
     },
-    "refreshedAt": "2025-12-03T22:21:27.933Z",
+    "refreshedAt": "2025-12-05T11:56:14.347Z",
+    "reason": "No significant artifacts detected in the selected timeframe (adjust filters).",
     "mode": "flexible"
   }
 }

@@ -3,6 +3,7 @@ description: "RL4.Core — Adaptive Governance Layer"
 globs: "**/*"
 alwaysApply: true
 manual: false
+priority: high
 ---
 
 # RL4.Core — Adaptive Governance Layer

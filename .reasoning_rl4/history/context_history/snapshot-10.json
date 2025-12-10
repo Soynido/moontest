@@ -1,0 +1,25 @@
+{
+  "snapshot_id": 10,
+  "range": [
+    1,
+    10
+  ],
+  "duration_sec": 1000,
+  "source": "auto",
+  "timestamp": "2025-12-04T01:36:44.921Z",
+  "patterns": [],
+  "forecasts": [],
+  "correlations": [],
+  "cognitive_load": 0.0008101851851851852,
+  "git_context": {
+    "last_commit": "",
+    "time_since_commit_sec": 0
+  },
+  "files_active": [
+    "rl4-test-sandbox/heavy.ts",
+    "rl4-test-sandbox/done-file.ts",
+    "package.json",
+    "rl4-test-sandbox/new-folder/a.ts",
+    "rl4-test-sandbox/CONTRIBUTING.md"
+  ]
+}

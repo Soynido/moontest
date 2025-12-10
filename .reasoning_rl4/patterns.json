@@ -1,0 +1,27 @@
+{
+  "patterns": [
+    {
+      "id": "fallback-pattern-1",
+      "pattern": "Stabilize rl4-test-sandbox/canonicalize-test.ts flow",
+      "frequency": 30,
+      "confidence": 0.5,
+      "impact": "Technical_Debt",
+      "category": "structural",
+      "tags": [
+        "rl4-test-sandbox/canonicalize-test.ts",
+        "flexible",
+        "fallback"
+      ],
+      "firstSeen": "2025-12-07T18:19:18.893Z",
+      "lastSeen": "2025-12-07T18:19:18.893Z",
+      "evidenceIds": [
+        "file:rl4-test-sandbox/canonicalize-test.ts",
+        "cmd:command_end"
+      ],
+      "recommendation": "Continue consolidating work on rl4-test-sandbox/canonicalize-test.ts while mode flexible is active.",
+      "pattern_id": "pattern-861abc78"
+    }
+  ],
+  "generated_at": "2025-12-07T18:20:42.438Z",
+  "version": "1.0"
+}

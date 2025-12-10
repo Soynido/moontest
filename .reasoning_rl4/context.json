@@ -1,19 +1,23 @@
 {
-  "last_updated": "2025-12-03T21:56:23.762Z",
-  "current_cycle": 1,
-  "pattern": "",
-  "pattern_confidence": 0,
-  "forecast": "",
-  "forecast_confidence": 0,
+  "last_updated": "2025-12-07T18:19:58.079Z",
+  "current_cycle": 2,
+  "pattern": "Stabilize rl4-test-sandbox/canonicalize-test.ts flow",
+  "pattern_confidence": 0.544,
+  "forecast": "Address accumulated technical debt",
+  "forecast_confidence": 0.65,
   "intent": "unknown",
   "adr": null,
   "files": [
-    "rl4-test-sandbox/heavy.ts"
+    "package.json",
+    "rl4-test-sandbox/new-folder/a.ts",
+    "rl4-test-sandbox/CONTRIBUTING.md",
+    "rl4-test-sandbox/new-folder/c.ts",
+    "rl4-test-sandbox/test-config.yaml"
   ],
   "stats": {
-    "total_cycles": 1,
-    "total_patterns": 0,
-    "total_forecasts": 0,
-    "total_adrs": 0
+    "total_cycles": 2,
+    "total_patterns": 1,
+    "total_forecasts": 2,
+    "total_adrs": 1
   }
 }

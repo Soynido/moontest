@@ -1,0 +1,16 @@
+---
+version: 1.0.0
+updated: 2025-12-05T17:16:30.646Z
+confidence: 0.5
+kpis_llm: []
+kpis_kernel: []
+first_use_lock: false
+---
+
+# Context — Workspace State
+
+## Active Files
+- (awaiting First Use snapshot)
+
+## Observations
+- RL4 initialized, awaiting First Use snapshot for context extraction
